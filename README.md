@@ -1,1 +1,118 @@
-IyBhbmlnZXItcGlsb3Qg4oCUICpBc3BlcmdpbGx1cyBuaWdlciogdmlydHVhbCBtaWNyb2JlLCB1bmlmaWVkIHBpbG90CgpUd28gKkEuIG5pZ2VyKiBtb2RlbHMgYXQgZGlmZmVyZW50IHNjYWxlcywgcGx1cyB0aGUgYW5ub3RhdGlvbiBjcm9zc3dhbGsKYmV0d2VlbiB0aGVtLCBpbiBvbmUgY2xvbmUtYW5kLXJ1biByZXBvLiBPbmUgYHZlcmlmeS5weWAgY2hlY2tzIGFsbCB0aHJlZQpsYXllcnMgKCoqMTIgaGFyZCBjaGVja3MqKikuCgpgYGBiYXNoCnBpcCBpbnN0YWxsIC1yIHJlcXVpcmVtZW50cy50eHQKcHl0aG9uIHZlcmlmeS5weSAgICMgZXhpdCAwID0gYWxsIDEyIGNoZWNrcyBwYXNzZWQKYGBgCgojIyBXaHkgb25lIHJlcG8gd2l0aCB0d28gbW9kZWxzCgpCb3RoIG1vZGVscyBhcmUgKkFzcGVyZ2lsbHVzIG5pZ2VyKiwgYW5kIHRoZXkgYW5zd2VyIGRpZmZlcmVudCBxdWVzdGlvbnM6Cgp8IE1vZGVsIHwgU2NhbGUgfCBXaGF0IGl0IGlzIHwgR3Jvd3RoIHwKfC0tLXwtLS18LS0tfC0tLXwKfCAqKmlKQjEzMjUqKiAoQmlHRykgfCAyMzIwIHJ4biAvIDE4MTggbWV0IC8gKioxMzI1IGdlbmUqKiB8IHB1Ymxpc2hlZCBnZW5vbWUtc2NhbGUgbW9kZWwsICpBLiBuaWdlciogQVRDQyAxMDE1IHwgKiowLjkzOTkgaOKBu8K5KiogfAp8ICoqYW5pZ2VyX2NjbSoqIChpbi1ob3VzZSkgfCAyOCByeG4gLyAyNCBtZXQgLyAqKjE3IGdlbmUqKiB8IGN1cmF0ZWQgY2VudHJhbC1jYXJib24tbWV0YWJvbGlzbSBjb3JlIHwgKioxOC45NSBtb2RlbCB1bml0cyoqIChub3QgaOKBu8K5KSB8CnwgKipjcm9zc3dhbGsqKiB8IOKAlCB8IHJlYWN0aW9uLWxldmVsIGFubm90YXRpb24gbWFwcGluZyBiZXR3ZWVuIHRoZW0gfCDigJQgfAoKVGhleSBhcmUgKipub3QqKiBtZXJnZWQgaW50byBvbmUgU0JNTCBmaWxlLCBhbmQgdGhhdCBpcyBhIG1lYXN1cmVkIGRlY2lzaW9uCihjaGVjayBHNyBhc3NlcnRzIGl0KToKCi0gbWV0YWJvbGl0ZSBpZHM6IDI0IHZzIDE4MTgg4oaSICoqMCBjb2xsaXNpb25zKioKLSByZWFjdGlvbiBpZHM6IDI4IHZzIDIzMjAg4oaSICoqMCBjb2xsaXNpb25zKioKLSBnZW5lIGlkczogMTcgdnMgMTMyNSDihpIgKiowIGNvbGxpc2lvbnMqKiDigJQgdGhlIENDTSB1c2VzIHN5bWJvbGljIG5hbWVzCiAgKGBhY29BYCwgYGNpdEFgLCBgY2V4QWApLCBpSkIxMzI1IHVzZXMgbnVtZXJpYyBpZHMKCk1vcmUgZGVjaXNpdmVseTogKioxMyBvZiB0aGUgQ0NNJ3MgMjggcmVhY3Rpb25zIGhhdmUgbm8gZ2Vub21lLXNjYWxlCmNvdW50ZXJwYXJ0KiogKGBFWF9waG9zYCwgYFBIT1N0YCwgYEVYX2NpdGAsIGBFWF9nbHVjb25gLCB0aGUgbHVtcGVkCmBFTVBfcHlyYC9gRU1QX3BlcGAsIGBBVFBfc2lua2AsIGBCSU9NQVNTYCwgYERNX2Jpb2AsIGBCR0NfTlJQU2AsIGBCR0NfUEtTYCwKYERNX3NtMWAsIGBETV9zbTJgKS4gTWVyZ2luZyB3b3VsZCBmYWJyaWNhdGUgcmVhY3Rpb25zIHRoYXQgZXhpc3QgaW4gbmVpdGhlcgptb2RlbC4gU2lkZSBieSBzaWRlLCBlYWNoIG1vZGVsIHN0YXlzIGludGVybmFsbHkgY29uc2lzdGVudCBhbmQgdGhlIG1hcHBpbmcKYmV0d2VlbiB0aGVtIHN0YXlzIGFuIGV4cGxpY2l0LCBpbnNwZWN0YWJsZSBhcnRpZmFjdC4KCiMjIFdoYXQgdGhlIG1vZGVscyBhY3R1YWxseSBzaG93CgoqKmlKQjEzMjUqKiDigJQgZ2Vub21lLXNjYWxlLCAqQS4gbmlnZXIqIEFUQ0MgMTAxNS4gUmVwcm9kdWNlcyBCaUdHJ3MgcHVibGlzaGVkCmRpbWVuc2lvbnMgZXhhY3RseSBhbmQgZ3Jvd3MgYXQgMC45Mzk5IGjigbvCuS4gQ2xvc2luZyBhbGwgMzUzIG9yZ2FuaWMtY2FyYm9uCmV4Y2hhbmdlIGJvdW5kYXJpZXMgY29sbGFwc2VzIGdyb3d0aCB0byAwICgxMDAlKSwgd2hpY2ggcHJvdmVzIGZsdXggYWNjb3VudGluZwppcyBjYXJib24tYm91bmRlZDsgaXQgZG9lcyBub3QgcHJlZGljdCBhbnkgcGhlbm90eXBlLgoKKiphbmlnZXJfY2NtKiog4oCUIGEgMjgtcmVhY3Rpb24gY29yZSB3aXRoIGEgKnJlYWwqIGJpb21hc3MgcmVhY3Rpb24KKGBCSU9NQVNTYCwgU0JPOjAwMDA2MjksIHJlYWwgcHJlY3Vyc29ycyArIEdBTSksIGdlbnVpbmUgR1BSLCBhbmQgYQp2ZXJpZmlhYmxlIGNhcmJvbiBndWFyZHJhaWwgKDUgb3JnYW5pYy1jYXJib24gZXhjaGFuZ2VzIOKGkiAxMDAlIGNvbGxhcHNlKS4KCkl0cyBoZWFkbGluZSByZXN1bHQgaXMgdGhlICoqcGhvc3BoYXRlIHN3aXRjaCoqLCB3aGljaCBpcyB0aGUgY2l0cmljLWFjaWQKcHJvZHVjdGlvbiBwaGVub3R5cGUgaW5kdXN0cmlhbCBzdHJhaW5zIGFyZSBzZWxlY3RlZCBmb3I6Cgp8IFBoYXNlIHwgR3Jvd3RoIHwgQ2l0cmF0ZSBzZWNyZXRpb24gY2FwYWNpdHkgfAp8LS0tfC0tLXwtLS18CnwgcGhvc3BoYXRlIHN1ZmZpY2llbnQgfCAxOC45NSB8IDYuMDAgfAp8IHBob3NwaGF0ZSBkZXBsZXRlZCAoYEVYX3Bob3NgIGNsb3NlZCkgfCAwLjAwIHwgKioxMi4wMCoqICgyw5cpIHwKCioqT25lIG1lYXN1cmVkIHRyYXAuKiogWW91IGNhbm5vdCByZWFkIGNpdHJhdGUgb3ZlcmZsb3cgb2ZmIGEKYmlvbWFzcy1tYXhpbWlzaW5nIEZCQSBzb2x1dGlvbjogd2l0aCBiaW9tYXNzIGFzIHRoZSBzb2xlIG9iamVjdGl2ZSB0aGUgTFAKcmV0dXJucyBhIGNhcmJvbi1taW5pbWFsIGtuaWZlLWVkZ2Ugc29sdXRpb24gYW5kIGBFWF9jaXRgIGlzIGV4YWN0bHkgYDAuMDAwMGAKaW4gKmJvdGgqIHBoYXNlcyDigJQgYSBmYWxzZSBuZWdhdGl2ZSB0aGF0IGhpZGVzIHRoZSBwaGVub3R5cGUgY29tcGxldGVseS4KT3ZlcmZsb3cgaXMgYW4gKmFsdGVybmF0aXZlKiBvYmplY3RpdmUsIHNvIGVhY2ggcGhhc2UgaXMgc29sdmVkIGFzICJrZWVwIGdyb3d0aAriiaUgNTAlIG9mIHRoZSBwaGFzZS0xIG1heGltdW0sIHRoZW4gbWF4aW1pc2UgYEVYX2NpdGAiLgoKIyMgTGF5b3V0CgpgYGAKbW9kZWxzL2dlbm9tZV9zY2FsZS9pSkIxMzI1L2lKQjEzMjVfQVRDQzEwMTUueG1sICAgQmlHRyBmdWxsIEdFTSAoQmlHRyBsaWNlbmNlKQptb2RlbHMvY3VyYXRlZF9jY20vYW5pZ2VyX2NjbV9yZWZpbmVkLnhtbCAgICAgICAgICAgaW4taG91c2UgQ0NNIChNSVQpCnNyYy9hbmlnZXJfZmJhLnB5ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB6ZXJvLWRlcGVuZGVuY3kgd3JhcHBlcgpjcm9zc3dhbGsvYW5pZ2VyX2Fubm90YXRpb25fY3Jvc3N3YWxrLntweSxqc29ufSAgICAgbWFwcGluZyArIGl0cyBtZWFzdXJlZCBvdXRwdXQKdmVyaWZ5LnB5ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDEyIGhhcmQgY2hlY2tzLCBmYWlsLWNsb3NlZApUSElSRF9QQVJUWV9MSUNFTlNFUy9CaUdHX0xJQ0VOU0UudHh0ICAgICAgICAgICAgICAgdmVyYmF0aW0sIG11c3Qgbm90IGJlIHJlbW92ZWQKYGBgCgojIyBUd28gcnVsZXMgdGhpcyByZXBvIGVuZm9yY2VzIGluIGNvZGUKCkJvdGggd2VyZSBsZWFybmVkIGJ5IGdldHRpbmcgdGhlbSB3cm9uZywgbm90IGJ5IHJlYWRpbmcgYWJvdXQgdGhlbS4KCioqMS4gSWRlbnRpdHkgYXNzZXJ0aW9ucyBuZXZlciByaWRlIG9uIHRoZSBudW1lcmljIGNoZWNrcy4qKiBpSkIxMzI1IHdhcwpvcmlnaW5hbGx5IHB1Ymxpc2hlZCBhcyBgaWpiMTMyNS1lY29saS1waWxvdGAsIGxhYmVsbGVkICpFLiBjb2xpKi4gRXZlcnkKZGltZW5zaW9uIGFuZCBncm93dGggbnVtYmVyIG1hdGNoZWQgcHVibGlzaGVkIHZhbHVlcyBhbmQgZXZlcnkgY2hlY2sgd2FzCmdyZWVuIOKAlCB3aGlsZSB0aGUgb3JnYW5pc20gbGFiZWwgd2FzIHdyb25nLiBJdCBpcyAqQS4gbmlnZXIqIEFUQ0MgMTAxNS4gQ2hlY2sKRzEgbm93IGFzc2VydHMgdGhlIG9yZ2FuaXNtIG9mICoqYm90aCoqIG1vZGVscyBzZXBhcmF0ZWx5IGZyb20gYW55Cm1lYXN1cmVtZW50LCBhbmQgRzIgYXNzZXJ0cyB0aGUgdHdvIGdyb3d0aCAqKnVuaXRzKiogYXJlIG5vdCBjb25mbGF0ZWQuCgoqKjIuIE92ZXJmbG93IHByb2R1Y3RzIGFyZSBpbnZpc2libGUgdW5kZXIgdGhlIG5hdHVyYWwgb2JqZWN0aXZlLioqIFNlZSB0aGUKbWVhc3VyZWQgdHJhcCBhYm92ZS4gQW55IGRvd25zdHJlYW0gcmV1c2Ugb2YgYHBob3NwaGF0ZV9zd2l0Y2goKWAgbXVzdCBrZWVwCnRoZSBncm93dGgtZmxvb3Igc3RydWN0dXJlLgoKIyMgSG9uZXN0IGxpbWl0cwoKLSBUaGUgQ0NNIGlzIGEgZm9jdXNlZCBjb3JlLCBub3Qgd2hvbGUtY2VsbC4gSXRzIGx1bXBlZCByZWFjdGlvbnMgKGBFTVBfKmAsCiAgYEdPWGAsIGBBVFBfc2lua2ApIGRvIG5vdCBzdHJpY3RseSBjb25zZXJ2ZSBtYXNzL2NoYXJnZSDigJQgYSB0b29sIGxpa2UgTUVNT1RFCiAgd291bGQgZmxhZyBgbWFzc19iYWxhbmNlYCBvbiB0aGVtLiBEZWxpYmVyYXRlIHNpbXBsaWZpY2F0aW9uLgotICoqVW5pdHMgYXJlIG5vdCBjb21wYXJhYmxlLioqIDAuOTM5OSBo4oG7wrkgdnMgMTguOTUgbW9kZWwgdW5pdHMuCi0gKipUaGUgY3Jvc3N3YWxrIGlzIHBhcnRpYWwgYW5kIG5vdCB2YWxpZGF0ZWQgYXMgb3J0aG9sb2d5LioqIDE1LzI4IHJlYWN0aW9ucwogIG1hcCAoNDMgZGlzdGluY3QgaUpCMTMyNSB0YXJnZXRzKSwgZ2VuZXMgYXJlIHByb3BhZ2F0ZWQgdGhyb3VnaCBHUFJzIHdpdGggbm8KICBzZXF1ZW5jZSBhbGlnbm1lbnQsIGFuZCBvbmUgbWFwcGVkIHRhcmdldCAoYEJPVU5EQVJZX2JER0xDZWAsIEwtZ2x1Y29zZSkgaXMKICBhIHN0ZXJlbyBtaXNtYXRjaCByZWNvcmRlZCBhcyBhIGtub3duIGRlZmVjdCAoY2hlY2sgRzZjKS4KLSBObyBleHBlcmltZW50YWwgdmFsaWRhdGlvbi4gTWF0Y2hpbmcgQmlHRydzIHB1Ymxpc2hlZCBkaW1lbnNpb25zIHByb3ZlcyB0aGUKICAqZmlsZSogaXMgaUpCMTMyNSwgbm90aGluZyBtb3JlLgoKIyMgTGljZW5jZQoKYExJQ0VOU0VgIChNSVQpIGNvdmVycyBgc3JjL2AsIGB2ZXJpZnkucHlgIGFuZCB0aGUgY3VyYXRlZCBDQ00gbW9kZWwuCioqaUpCMTMyNSBpcyBOT1QgY292ZXJlZCoqIOKAlCBCaUdHIG1vZGVscyBhcmUgbm90IENDIEJZLiBBY2FkZW1pYy9ub24tcHJvZml0CnVzZSBpcyBmcmVlOyBjb21tZXJjaWFsIHVzZSByZXF1aXJlcyBjb250YWN0aW5nIGBpbnZlbnRAdWNzZC5lZHVgLgpgVEhJUkRfUEFSVFlfTElDRU5TRVMvQmlHR19MSUNFTlNFLnR4dGAgc2hpcHMgdmVyYmF0aW0gYW5kIG11c3Qgbm90IGJlCnJlbW92ZWQuIFNlZSBgTk9USUNFLm1kYC4KCiMjIFN1cGVyc2VkZWQKCmBpTUE4NzFgIChCaW9Nb2RlbHMpIGlzIGFiYW5kb25lZDogYGdlbmU9MGAsIGFuIGFydGlmaWNpYWwgYmlvbWFzcyBzaW5rLCBhbmQgYQpjYXJib24gZ3VhcmRyYWlsIHRoYXQgaXMgbm90IHZlcmlmaWFibGUuIFRoZSBjdXJhdGVkIENDTSBzdXBlcnNlZGVzIGl0LgpgRVhfZ2x1Y29uYCBpbiB0aGUgQ0NNIHJldGFpbnMgYW4gaU1BODcxLWRlcml2ZWQgZ2x1Y29uYXRlIGV4Y2hhbmdlIHJvdXRlLgoKIyMgU2VyaWVzCgpgZmllbGQtY2xhdy92aXRhbWluZC12aXJ0dWFsLW1pY3JvYmVgIGlzIHRoZSBzZXJpZXMgaHViLg==
+# aniger-pilot — *Aspergillus niger* virtual microbe, unified pilot
+
+Two *A. niger* models at different scales, plus the annotation crosswalk
+between them, in one clone-and-run repo. One `verify.py` checks all three
+layers (**12 hard checks**).
+
+```bash
+pip install -r requirements.txt
+python verify.py   # exit 0 = all 12 checks passed
+```
+
+## Why one repo with two models
+
+Both models are *Aspergillus niger*, and they answer different questions:
+
+| Model | Scale | What it is | Growth |
+|---|---|---|---|
+| **iJB1325** (BiGG) | 2320 rxn / 1818 met / **1325 gene** | published genome-scale model, *A. niger* ATCC 1015 | **0.9399 h⁻¹** |
+| **aniger_ccm** (in-house) | 28 rxn / 24 met / **17 gene** | curated central-carbon-metabolism core | **18.95 model units** (not h⁻¹) |
+| **crosswalk** | — | reaction-level annotation mapping between them | — |
+
+They are **not** merged into one SBML file, and that is a measured decision
+(check G7 asserts it):
+
+- metabolite ids: 24 vs 1818 → **0 collisions**
+- reaction ids: 28 vs 2320 → **0 collisions**
+- gene ids: 17 vs 1325 → **0 collisions** — the CCM uses symbolic names
+  (`acoA`, `citA`, `cexA`), iJB1325 uses numeric ids
+
+More decisively: **13 of the CCM's 28 reactions have no genome-scale
+counterpart** (`EX_phos`, `PHOSt`, `EX_cit`, `EX_glucon`, the lumped
+`EMP_pyr`/`EMP_pep`, `ATP_sink`, `BIOMASS`, `DM_bio`, `BGC_NRPS`, `BGC_PKS`,
+`DM_sm1`, `DM_sm2`). Merging would fabricate reactions that exist in neither
+model. Side by side, each model stays internally consistent and the mapping
+between them stays an explicit, inspectable artifact.
+
+## What the models actually show
+
+**iJB1325** — genome-scale, *A. niger* ATCC 1015. Reproduces BiGG's published
+dimensions exactly and grows at 0.9399 h⁻¹. Closing all 353 organic-carbon
+exchange boundaries collapses growth to 0 (100%), which proves flux accounting
+is carbon-bounded; it does not predict any phenotype.
+
+**aniger_ccm** — a 28-reaction core with a *real* biomass reaction
+(`BIOMASS`, SBO:0000629, real precursors + GAM), genuine GPR, and a
+verifiable carbon guardrail (5 organic-carbon exchanges → 100% collapse).
+
+Its headline result is the **phosphate switch**, which is the citric-acid
+production phenotype industrial strains are selected for:
+
+| Phase | Growth | Citrate secretion capacity |
+|---|---|---|
+| phosphate sufficient | 18.95 | 6.00 |
+| phosphate depleted (`EX_phos` closed) | 0.00 | **12.00** (2×) |
+
+**One measured trap.** You cannot read citrate overflow off a
+biomass-maximising FBA solution: with biomass as the sole objective the LP
+returns a carbon-minimal knife-edge solution and `EX_cit` is exactly `0.0000`
+in *both* phases — a false negative that hides the phenotype completely.
+Overflow is an *alternative* objective, so each phase is solved as "keep growth
+≥ 50% of the phase-1 maximum, then maximise `EX_cit`".
+
+## Layout
+
+```
+models/genome_scale/iJB1325/iJB1325_ATCC1015.xml   BiGG full GEM (BiGG licence)
+models/curated_ccm/aniger_ccm_refined.xml           in-house CCM (MIT)
+src/aniger_fba.py                                   zero-dependency wrapper
+crosswalk/aniger_annotation_crosswalk.{py,json}     mapping + its measured output
+verify.py                                           12 hard checks, fail-closed
+THIRD_PARTY_LICENSES/BiGG_LICENSE.txt               verbatim, must not be removed
+```
+
+## Two rules this repo enforces in code
+
+Both were learned by getting them wrong, not by reading about them.
+
+**1. Identity assertions never ride on the numeric checks.** iJB1325 was
+originally published as `ijb1325-ecoli-pilot`, labelled *E. coli*. Every
+dimension and growth number matched published values and every check was
+green — while the organism label was wrong. It is *A. niger* ATCC 1015. Check
+G1 now asserts the organism of **both** models separately from any
+measurement, and G2 asserts the two growth **units** are not conflated.
+
+**2. Overflow products are invisible under the natural objective.** See the
+measured trap above. Any downstream reuse of `phosphate_switch()` must keep
+the growth-floor structure.
+
+## Honest limits
+
+- The CCM is a focused core, not whole-cell. Its lumped reactions (`EMP_*`,
+  `GOX`, `ATP_sink`) do not strictly conserve mass/charge — a tool like MEMOTE
+  would flag `mass_balance` on them. Deliberate simplification.
+- **Units are not comparable.** 0.9399 h⁻¹ vs 18.95 model units.
+- **The crosswalk is partial and not validated as orthology.** 15/28 reactions
+  map (43 distinct iJB1325 targets), genes are propagated through GPRs with no
+  sequence alignment, and one mapped target (`BOUNDARY_bDGLCe`, L-glucose) is
+  a stereo mismatch recorded as a known defect (check G6c).
+- No experimental validation. Matching BiGG's published dimensions proves the
+  *file* is iJB1325, nothing more.
+
+## Licence
+
+`LICENSE` (MIT) covers `src/`, `verify.py` and the curated CCM model.
+**iJB1325 is NOT covered** — BiGG models are not CC BY. Academic/non-profit
+use is free; commercial use requires contacting `invent@ucsd.edu`.
+`THIRD_PARTY_LICENSES/BiGG_LICENSE.txt` ships verbatim and must not be
+removed. See `NOTICE.md`.
+
+## Superseded
+
+`iMA871` (BioModels) is abandoned: `gene=0`, an artificial biomass sink, and a
+carbon guardrail that is not verifiable. The curated CCM supersedes it.
+`EX_glucon` in the CCM retains an iMA871-derived gluconate exchange route.
+
+## Series
+
+`field-claw/vitamind-virtual-microbe` is the series hub.
