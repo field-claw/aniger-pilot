@@ -1,1 +1,21 @@
-IyBQeXRob24KX19weWNhY2hlX18vCioucHlbY29kXQoudmVudi8KdmVudi8KCiMgT1MKLkRTX1N0b3JlClRodW1icy5kYgoKIyBFZGl0b3JzCi52c2NvZGUvCi5pZGVhLwoKIyBOb3RoaW5nIGluIHRoaXMgcmVwbyBpcyBtYWNoaW5lLWdlbmVyYXRlZCBvdXRwdXQgdGhhdCBzaG91bGQgYmUgY29tbWl0dGVkLgojIElmIHlvdSBhZGQgYSBzY3JhdGNoIHNjcmlwdCwgZG8gbm90IGNvbW1pdCBpdC4KKi5sb2cKKi50bXA=
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Nothing in this repo is machine-generated output that should be committed.
+# If you add a scratch script, do not commit it.
+*.log
+*.tmp
+# local scratch from the API-upload path
+.gitkeep
+_tree.json
