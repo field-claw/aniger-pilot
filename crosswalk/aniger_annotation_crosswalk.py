@@ -1,1 +1,177 @@
-IiIiQnVpbGQgYW4gYW5ub3RhdGlvbiBjcm9zc3dhbGsgYmV0d2VlbiB0aGUgdHdvIGluLWhvdXNlL3B1Ymxpc2hlZCBBLiBuaWdlcgptb2RlbHMgV0lUSE9VVCBtZXJnaW5nIHRoZSBTQk1MIGZpbGVzIChtZXJnaW5nIHdvdWxkIGVudGFuZ2xlIGEgQmlHRy1saWNlbnNlZAptb2RlbCB3aXRoIGFuIE1JVC1saWNlbnNlZCBvbmU7IGEgY3Jvc3N3YWxrIGtlZXBzIGJvdGggbGljZW5zZS1jbGVhbikuCgpEaXJlY3Rpb246IHJlZmluZWQgQ0NNICgyOCByeG4sIGdlbmUgc3ltYm9scykgLT4gaUpCMTMyNSAoMjMyMCByeG4sIG51bWVyaWMKZ2VuZSBJRHMpLiBNYXBwaW5nIGV2aWRlbmNlLCBpbiBwcmlvcml0eSBvcmRlcjoKICBFMSBzdG9pY2hpb21ldHJpYyBmaW5nZXJwcmludCA6IG11bHRpc2V0IG9mIChmb3JtdWxhLCBjb2VmZmljaWVudCkgZXF1YWwKICBFMiBuYW1lIGtleXdvcmRzICAgICAgICAgICAgICA6IGN1cmF0ZWQga2V5d29yZCBoaXQgaW4gaUpCMTMyNSByeG4gbmFtZQpHZW5lcyBwcm9wYWdhdGU6IHJlZmluZWQgZ2VuZSAtLShyZWZpbmVkIEdQUiktLT4gcmVmaW5lZCByeG4gLS0obWFwKS0tPgppSkIxMzI1IHJ4biAtLShpSkIxMzI1IEdQUiktLT4gY2FuZGlkYXRlIGlKQjEzMjUgZ2VuZSBJRHMuCgpIb25lc3QgYm91bmRhcmllczogbHVtcGVkIHJlYWN0aW9ucyAoRU1QX3B5ci9FTVBfcGVwL0JJT01BU1MvQVRQX3NpbmspIG1hcCB0bwpNVUxUSVBMRSBpSkIxMzI1IHJlYWN0aW9ucyBvciBub25lOyBCR0MgY2x1c3RlcnMgaGF2ZSBubyBpSkIxMzI1IGNvdW50ZXJwYXJ0LgpFdmVyeSBlbnRyeSByZWNvcmRzIGl0cyBldmlkZW5jZTsgdW5tYXBwZWQgZW50cmllcyBzdGF5IHVubWFwcGVkLgoiIiIKZnJvbSBfX2Z1dHVyZV9fIGltcG9ydCBhbm5vdGF0aW9ucwoKaW1wb3J0IGpzb24KaW1wb3J0IG9zCmltcG9ydCBzeXMKZnJvbSBjb2xsZWN0aW9ucyBpbXBvcnQgQ291bnRlcgoKV1MgPSBvcy5wYXRoLmRpcm5hbWUob3MucGF0aC5kaXJuYW1lKG9zLnBhdGguYWJzcGF0aChfX2ZpbGVfXykpKQpzeXMucGF0aC5pbnNlcnQoMCwgb3MucGF0aC5qb2luKFdTLCAiYW5pZ2VyX2NjbV9waWxvdCIsICJzcmMiKSkKCmltcG9ydCBhbmlnZXJfZmJhIGFzIGFmICAjIG5vcWE6IEU0MDIgICh6ZXJvLWRlcCB3cmFwcGVyIGZyb20gdGhlIHBpbG90IHJlcG8pCgpmcm9tIGNvYnJhLmlvIGltcG9ydCByZWFkX3NibWxfbW9kZWwgICMgbm9xYTogRTQwMgoKUkVGSU5FRF9YTUwgPSBvcy5wYXRoLmpvaW4oV1MsICJhbmlnZXJfY2NtX3BpbG90IiwgImRhdGEiLAogICAgICAgICAgICAgICAgICAgICAgICAgICAiYW5pZ2VyX2NjbV9yZWZpbmVkLnhtbCIpCklKQl9YTUwgPSBvcy5wYXRoLmpvaW4oV1MsICJlY29saV9waWxvdCIsICJkYXRhIiwgImlKQjEzMjVfQVRDQzEwMTUueG1sIikKT1VUX0pTT04gPSBvcy5wYXRoLmpvaW4oV1MsICJkZW1vX2NvbW11bml0eV9vdXQiLAogICAgICAgICAgICAgICAgICAgICAgICAiYW5pZ2VyX2Fubm90YXRpb25fY3Jvc3N3YWxrLmpzb24iKQoKIyBjdXJhdGVkIGtleXdvcmQgaGludHM6IHJlZmluZWQgcnhuIGlkIC0+IGtleXdvcmRzIHRoYXQgbXVzdCBhcHBlYXIgaW4gdGhlCiMgaUpCMTMyNSByZWFjdGlvbiBuYW1lIChjYXNlLWluc2Vuc2l0aXZlKS4gRW1wdHkgPSBmaW5nZXJwcmludCBvbmx5LgpOQU1FX0hJTlRTID0gewogICAgIkNTIjogWyJjaXRyYXRlIHN5bnRoYXNlIl0sCiAgICAiQUNPIjogWyJhY29uaXRhc2UiLCAiYWNvbml0YXRlIGh5ZHJhdGFzZSJdLAogICAgIklDREgiOiBbImlzb2NpdHJhdGUgZGVoeWRyb2dlbmFzZSJdLAogICAgIlNESCI6IFsic3VjY2luYXRlIGRlaHlkcm9nZW5hc2UiXSwKICAgICJQREgiOiBbInB5cnV2YXRlIGRlaHlkcm9nZW5hc2UiXSwKICAgICJHT1giOiBbImdsdWNvc2Ugb3hpZGFzZSJdLAogICAgIkdMQ3QiOiBbImhleG9raW5hc2UiLCAiZ2x1Y29zZSB0cmFuc3BvcnQiXSwKICAgICJDSVRleCI6IFsiY2l0cmF0ZSJdLAogICAgIlBQQyI6IFsiY2FyYm94eWxhc2UiXSwKICAgICJQSE9TdCI6IFsicGhvc3BoYXRlIHRyYW5zcG9ydCJdLAp9CgoKZGVmIGZpbmdlcnByaW50KHJ4bik6CiAgICAiIiJNdWx0aXNldCBvZiAoZm9ybXVsYSwgY29lZmZpY2llbnQpIGlnbm9yaW5nIGNvbXBhcnRtZW50IHN1ZmZpeGVzLiIiIgogICAgc2lnID0gQ291bnRlcigpCiAgICBmb3IgbWV0LCBjb2VmIGluIHJ4bi5tZXRhYm9saXRlcy5pdGVtcygpOgogICAgICAgIGYgPSAobWV0LmZvcm11bGEgb3IgIj8iKS5zdHJpcCgpCiAgICAgICAgc2lnWyhmLCByb3VuZChjb2VmLCA2KSldICs9IDEKICAgIHJldHVybiBmcm96ZW5zZXQoc2lnLml0ZW1zKCkpCgoKZGVmIGxvYWQoKToKICAgIHJlZmluZWQgPSByZWFkX3NibWxfbW9kZWwoUkVGSU5FRF9YTUwpCiAgICBpamIgPSByZWFkX3NibWxfbW9kZWwoSUpCX1hNTCkKICAgIHJldHVybiByZWZpbmVkLCBpamIKCgpkZWYgYnVpbGRfY3Jvc3N3YWxrKCk6CiAgICByZWZpbmVkLCBpamIgPSBsb2FkKCkKCiAgICAjIGluZGV4IGlKQjEzMjUgYnkgZmluZ2VycHJpbnQgKG9ubHkgcmVhY3Rpb25zIHdpdGggZnVsbCBmb3JtdWxhcykKICAgIGZwX2luZGV4ID0ge30KICAgIG5vX2Zvcm11bGEgPSAwCiAgICBmb3IgciBpbiBpamIucmVhY3Rpb25zOgogICAgICAgIG1ldHMgPSBsaXN0KHIubWV0YWJvbGl0ZXMuaXRlbXMoKSkKICAgICAgICBpZiBub3QgbWV0cyBvciBhbnkoKG0uZm9ybXVsYSBvciAiIikuc3RyaXAoKSBpbiAoIiIsICI/IikKICAgICAgICAgICAgICAgICAgICAgICAgICAgZm9yIG0sIF8gaW4gbWV0cyk6CiAgICAgICAgICAgIG5vX2Zvcm11bGEgKz0gMQogICAgICAgICAgICBjb250aW51ZQogICAgICAgIGZwX2luZGV4LnNldGRlZmF1bHQoZmluZ2VycHJpbnQociksIFtdKS5hcHBlbmQocikKCiAgICBlbnRyaWVzID0gW10KICAgIGZvciByciBpbiByZWZpbmVkLnJlYWN0aW9uczoKICAgICAgICBjYW5kcyA9IFtdCiAgICAgICAgIyBFMSBmaW5nZXJwcmludAogICAgICAgIGV4YWN0ID0gZnBfaW5kZXguZ2V0KGZpbmdlcnByaW50KHJyKSwgW10pCiAgICAgICAgZm9yIGhpdCBpbiBleGFjdDoKICAgICAgICAgICAgY2FuZHMuYXBwZW5kKHsiaUpCMTMyNSI6IGhpdC5pZCwgIm5hbWUiOiBoaXQubmFtZSBvciAiIiwKICAgICAgICAgICAgICAgICAgICAgICAgICAiZXZpZGVuY2UiOiAiRTFfZmluZ2VycHJpbnQifSkKICAgICAgICAjIEUyIG5hbWUga2V5d29yZHMKICAgICAgICBoaW50cyA9IE5BTUVfSElOVFMuZ2V0KHJyLmlkLCBbXSkKICAgICAgICBmb3Iga3cgaW4gaGludHM6CiAgICAgICAgICAgIGZvciByIGluIGlqYi5yZWFjdGlvbnM6CiAgICAgICAgICAgICAgICBpZiBrdyBpbiAoci5uYW1lIG9yICIiKS5sb3dlcigpOgogICAgICAgICAgICAgICAgICAgIGNhbmRzLmFwcGVuZCh7ImlKQjEzMjUiOiByLmlkLCAibmFtZSI6IHIubmFtZSBvciAiIiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOiVzIiAlIGt3fSkKICAgICAgICAjIGRlZHVwZSwgcHJlZmVyIGV4YWN0IGZpbmdlcnByaW50IGhpdHMKICAgICAgICBzZWVuLCB1bmlxID0gc2V0KCksIFtdCiAgICAgICAgZm9yIGMgaW4gc29ydGVkKGNhbmRzLCBrZXk9bGFtYmRhIGM6IDAgaWYgY1siZXZpZGVuY2UiXS5zdGFydHN3aXRoKCJFMSIpIGVsc2UgMSk6CiAgICAgICAgICAgIGlmIGNbImlKQjEzMjUiXSBub3QgaW4gc2VlbjoKICAgICAgICAgICAgICAgIHNlZW4uYWRkKGNbImlKQjEzMjUiXSkKICAgICAgICAgICAgICAgIHVuaXEuYXBwZW5kKGMpCiAgICAgICAgZW50cmllcy5hcHBlbmQoewogICAgICAgICAgICAicmVmaW5lZCI6IHJyLmlkLAogICAgICAgICAgICAicmVmaW5lZF9ncHIiOiByci5nZW5lX3JlYWN0aW9uX3J1bGUgb3IgIiIsCiAgICAgICAgICAgICJtYXRjaGVzIjogdW5pcVs6Nl0sCiAgICAgICAgICAgICJuX21hdGNoZXMiOiBsZW4odW5pcSksCiAgICAgICAgfSkKICAgIHJldHVybiByZWZpbmVkLCBpamIsIGVudHJpZXMKCgpkZWYgcHJvcGFnYXRlX2dlbmVzKHJlZmluZWQsIGlqYiwgZW50cmllcyk6CiAgICAiIiJyZWZpbmVkIGdlbmUgLT4gcmVmaW5lZCByeG4gLT4gbWF0Y2hlZCBpSkIxMzI1IHJ4biAtPiBpSkIxMzI1IGdlbmVzLiIiIgogICAgZ2VuZV9tYXAgPSB7fQogICAgZm9yIGUgaW4gZW50cmllczoKICAgICAgICByZ3ByID0gZVsicmVmaW5lZF9ncHIiXQogICAgICAgIGlmIG5vdCByZ3ByOgogICAgICAgICAgICBjb250aW51ZQogICAgICAgIGZvciBnIGluIHJncHIucmVwbGFjZSgiKCIsICIgIikucmVwbGFjZSgiKSIsICIgIikuc3BsaXQoKToKICAgICAgICAgICAgaWYgZyBpbiAoImFuZCIsICJvciIpOgogICAgICAgICAgICAgICAgY29udGludWUKICAgICAgICAgICAgc2xvdCA9IGdlbmVfbWFwLnNldGRlZmF1bHQoZywgW10pCiAgICAgICAgICAgIGZvciBtIGluIGVbIm1hdGNoZXMiXToKICAgICAgICAgICAgICAgIHIgPSBpamIucmVhY3Rpb25zLmdldF9ieV9pZChtWyJpSkIxMzI1Il0pCiAgICAgICAgICAgICAgICBmb3IgZ2cgaW4gci5nZW5lczoKICAgICAgICAgICAgICAgICAgICBzbG90LmFwcGVuZCh7InZpYSI6IG1bImlKQjEzMjUiXSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgImV2aWRlbmNlIjogbVsiZXZpZGVuY2UiXSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgImdlbmUiOiBnZy5pZH0pCiAgICByZXR1cm4ge2c6IHYgZm9yIGcsIHYgaW4gZ2VuZV9tYXAuaXRlbXMoKX0KCgpkZWYgbWFpbigpOgogICAgcmVmaW5lZCwgaWpiLCBlbnRyaWVzID0gYnVpbGRfY3Jvc3N3YWxrKCkKICAgIGdtID0gcHJvcGFnYXRlX2dlbmVzKHJlZmluZWQsIGlqYiwgZW50cmllcykKCiAgICBuX2V4YWN0ID0gc3VtKDEgZm9yIGUgaW4gZW50cmllcwogICAgICAgICAgICAgICAgICBpZiBhbnkobVsiZXZpZGVuY2UiXS5zdGFydHN3aXRoKCJFMSIpIGZvciBtIGluIGVbIm1hdGNoZXMiXSkpCiAgICBuX2FueSA9IHN1bSgxIGZvciBlIGluIGVudHJpZXMgaWYgZVsibWF0Y2hlcyJdKQogICAgbl91bm1hcHBlZCA9IFtlWyJyZWZpbmVkIl0gZm9yIGUgaW4gZW50cmllcyBpZiBub3QgZVsibWF0Y2hlcyJdXQoKICAgIG91dCA9IHsKICAgICAgICAiZGlyZWN0aW9uIjogInJlZmluZWRfY2NtKDI4cnhuLDE3Z2VuZXMpIC0+IGlKQjEzMjUoMjMyMHJ4biwxMzI1Z2VuZXMpIiwKICAgICAgICAibWV0aG9kIjogIkUxIHN0b2ljaGlvbWV0cmljIGZpbmdlcnByaW50OyBFMiBjdXJhdGVkIG5hbWUga2V5d29yZHM7ICIKICAgICAgICAgICAgICAgICAgImdlbmVzIHByb3BhZ2F0ZWQgdGhyb3VnaCBHUFJzIChubyBzZXF1ZW5jZSBhbGlnbm1lbnQpIiwKICAgICAgICAiY291bnRzIjogewogICAgICAgICAgICAicmVmaW5lZF9yZWFjdGlvbnMiOiBsZW4ocmVmaW5lZC5yZWFjdGlvbnMpLAogICAgICAgICAgICAibWFwcGVkX2V4YWN0X2ZpbmdlcnByaW50Ijogbl9leGFjdCwKICAgICAgICAgICAgIm1hcHBlZF9hbnkiOiBuX2FueSwKICAgICAgICAgICAgInVubWFwcGVkIjogbl91bm1hcHBlZCwKICAgICAgICAgICAgImdlbmVzX3dpdGhfY2FuZGlkYXRlcyI6IGxlbihnbSksCiAgICAgICAgfSwKICAgICAgICAicmVhY3Rpb25fY3Jvc3N3YWxrIjogZW50cmllcywKICAgICAgICAiZ2VuZV9jYW5kaWRhdGVzIjogZ20sCiAgICB9CiAgICBvcy5tYWtlZGlycyhvcy5wYXRoLmRpcm5hbWUoT1VUX0pTT04pLCBleGlzdF9vaz1UcnVlKQogICAgd2l0aCBvcGVuKE9VVF9KU09OLCAidyIsIGVuY29kaW5nPSJ1dGYtOCIpIGFzIGZoOgogICAgICAgIGpzb24uZHVtcChvdXQsIGZoLCBpbmRlbnQ9MSwgZW5zdXJlX2FzY2lpPUZhbHNlKQoKICAgIHByaW50KCI9PT0gY3Jvc3N3YWxrIHdyaXR0ZW4gLT4gJXMiICUgT1VUX0pTT04pCiAgICBwcmludCgiZXhhY3QtZmluZ2VycHJpbnQgbWFwcGVkIDogJWQvMjgiICUgbl9leGFjdCkKICAgIHByaW50KCJhbnktZXZpZGVuY2UgbWFwcGVkICAgICAgOiAlZC8yOCIgJSBuX2FueSkKICAgIHByaW50KCJ1bm1hcHBlZCAgICAgICAgICAgICAgICAgOiAlcyIgJSBuX3VubWFwcGVkKQogICAgcHJpbnQoImdlbmVzIHdpdGggY2FuZGlkYXRlcyAgICA6ICVkLzE3IiAlIGxlbihnbSkpCiAgICBwcmludCgiXG4tLS0ga2V5IHNwb3QgY2hlY2tzIC0tLSIpCiAgICBmb3Igd2FudCBpbiAoIkNTIiwgIklDREgiLCAiU0RIIiwgIlBESCIsICJHT1giLCAiQ0lUZXgiKToKICAgICAgICBlID0gbmV4dCh4IGZvciB4IGluIGVudHJpZXMgaWYgeFsicmVmaW5lZCJdID09IHdhbnQpCiAgICAgICAgdG9wcyA9ICIsICIuam9pbigiJXMoJXMpIiAlIChtWyJpSkIxMzI1Il0sIG1bImV2aWRlbmNlIl1bOjJdKQogICAgICAgICAgICAgICAgICAgICAgICAgZm9yIG0gaW4gZVsibWF0Y2hlcyJdWzozXSkgb3IgIi0iCiAgICAgICAgcHJpbnQoIiAgJS02cyAtPiAlcyIgJSAod2FudCwgdG9wcykpCiAgICBmb3IgZyBpbiAoImNpdEEiLCAiY2V4QSIsICJnb3hDIiwgInNkaEEiKToKICAgICAgICBjID0gZ20uZ2V0KGcsIFtdKQogICAgICAgIHByaW50KCIgIGdlbmUgJS02cyAtPiAlZCBjYW5kaWRhdGVzLCBlLmcuICVzIgogICAgICAgICAgICAgICUgKGcsIGxlbihjKSwgW3hbImdlbmUiXSBmb3IgeCBpbiBjWzo0XV0pKQogICAgcmV0dXJuIDAKCgppZiBfX25hbWVfXyA9PSAiX19tYWluX18iOgogICAgc3lzLmV4aXQobWFpbigpKQo=
+"""Build an annotation crosswalk between the two in-house/published A. niger
+models WITHOUT merging the SBML files (merging would entangle a BiGG-licensed
+model with an MIT-licensed one; a crosswalk keeps both license-clean).
+
+Direction: refined CCM (28 rxn, gene symbols) -> iJB1325 (2320 rxn, numeric
+gene IDs). Mapping evidence, in priority order:
+  E1 stoichiometric fingerprint : multiset of (formula, coefficient) equal
+  E2 name keywords              : curated keyword hit in iJB1325 rxn name
+Genes propagate: refined gene --(refined GPR)--> refined rxn --(map)-->
+iJB1325 rxn --(iJB1325 GPR)--> candidate iJB1325 gene IDs.
+
+Honest boundaries: lumped reactions (EMP_pyr/EMP_pep/BIOMASS/ATP_sink) map to
+MULTIPLE iJB1325 reactions or none; BGC clusters have no iJB1325 counterpart.
+Every entry records its evidence; unmapped entries stay unmapped.
+"""
+from __future__ import annotations
+
+import json
+import os
+import sys
+from collections import Counter
+
+WS = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(WS, "aniger_ccm_pilot", "src"))
+
+import aniger_fba as af  # noqa: E402  (zero-dep wrapper from the pilot repo)
+
+from cobra.io import read_sbml_model  # noqa: E402
+
+REFINED_XML = os.path.join(WS, "aniger_ccm_pilot", "data",
+                           "aniger_ccm_refined.xml")
+IJB_XML = os.path.join(WS, "ecoli_pilot", "data", "iJB1325_ATCC1015.xml")
+OUT_JSON = os.path.join(WS, "demo_community_out",
+                        "aniger_annotation_crosswalk.json")
+
+# curated keyword hints: refined rxn id -> keywords that must appear in the
+# iJB1325 reaction name (case-insensitive). Empty = fingerprint only.
+NAME_HINTS = {
+    "CS": ["citrate synthase"],
+    "ACO": ["aconitase", "aconitate hydratase"],
+    "ICDH": ["isocitrate dehydrogenase"],
+    "SDH": ["succinate dehydrogenase"],
+    "PDH": ["pyruvate dehydrogenase"],
+    "GOX": ["glucose oxidase"],
+    "GLCt": ["hexokinase", "glucose transport"],
+    "CITex": ["citrate"],
+    "PPC": ["carboxylase"],
+    "PHOSt": ["phosphate transport"],
+}
+
+
+def fingerprint(rxn):
+    """Multiset of (formula, coefficient) ignoring compartment suffixes."""
+    sig = Counter()
+    for met, coef in rxn.metabolites.items():
+        f = (met.formula or "?").strip()
+        sig[(f, round(coef, 6))] += 1
+    return frozenset(sig.items())
+
+
+def load():
+    refined = read_sbml_model(REFINED_XML)
+    ijb = read_sbml_model(IJB_XML)
+    return refined, ijb
+
+
+def build_crosswalk():
+    refined, ijb = load()
+
+    # index iJB1325 by fingerprint (only reactions with full formulas)
+    fp_index = {}
+    no_formula = 0
+    for r in ijb.reactions:
+        mets = list(r.metabolites.items())
+        if not mets or any((m.formula or "").strip() in ("", "?")
+                           for m, _ in mets):
+            no_formula += 1
+            continue
+        fp_index.setdefault(fingerprint(r), []).append(r)
+
+    entries = []
+    for rr in refined.reactions:
+        cands = []
+        # E1 fingerprint
+        exact = fp_index.get(fingerprint(rr), [])
+        for hit in exact:
+            cands.append({"iJB1325": hit.id, "name": hit.name or "",
+                          "evidence": "E1_fingerprint"})
+        # E2 name keywords
+        hints = NAME_HINTS.get(rr.id, [])
+        for kw in hints:
+            for r in ijb.reactions:
+                if kw in (r.name or "").lower():
+                    cands.append({"iJB1325": r.id, "name": r.name or "",
+                                  "evidence": "E2_name:%s" % kw})
+        # dedupe, prefer exact fingerprint hits
+        seen, uniq = set(), []
+        for c in sorted(cands, key=lambda c: 0 if c["evidence"].startswith("E1") else 1):
+            if c["iJB1325"] not in seen:
+                seen.add(c["iJB1325"])
+                uniq.append(c)
+        entries.append({
+            "refined": rr.id,
+            "refined_gpr": rr.gene_reaction_rule or "",
+            "matches": uniq[:6],
+            "n_matches": len(uniq),
+        })
+    return refined, ijb, entries
+
+
+def propagate_genes(refined, ijb, entries):
+    """refined gene -> refined rxn -> matched iJB1325 rxn -> iJB1325 genes."""
+    gene_map = {}
+    for e in entries:
+        rgpr = e["refined_gpr"]
+        if not rgpr:
+            continue
+        for g in rgpr.replace("(", " ").replace(")", " ").split():
+            if g in ("and", "or"):
+                continue
+            slot = gene_map.setdefault(g, [])
+            for m in e["matches"]:
+                r = ijb.reactions.get_by_id(m["iJB1325"])
+                for gg in r.genes:
+                    slot.append({"via": m["iJB1325"],
+                                 "evidence": m["evidence"],
+                                 "gene": gg.id})
+    return {g: v for g, v in gene_map.items()}
+
+
+def main():
+    refined, ijb, entries = build_crosswalk()
+    gm = propagate_genes(refined, ijb, entries)
+
+    n_exact = sum(1 for e in entries
+                  if any(m["evidence"].startswith("E1") for m in e["matches"]))
+    n_any = sum(1 for e in entries if e["matches"])
+    n_unmapped = [e["refined"] for e in entries if not e["matches"]]
+
+    out = {
+        "direction": "refined_ccm(28rxn,17genes) -> iJB1325(2320rxn,1325genes)",
+        "method": "E1 stoichiometric fingerprint; E2 curated name keywords; "
+                  "genes propagated through GPRs (no sequence alignment)",
+        "counts": {
+            "refined_reactions": len(refined.reactions),
+            "mapped_exact_fingerprint": n_exact,
+            "mapped_any": n_any,
+            "unmapped": n_unmapped,
+            "genes_with_candidates": len(gm),
+        },
+        "reaction_crosswalk": entries,
+        "gene_candidates": gm,
+    }
+    os.makedirs(os.path.dirname(OUT_JSON), exist_ok=True)
+    with open(OUT_JSON, "w", encoding="utf-8") as fh:
+        json.dump(out, fh, indent=1, ensure_ascii=False)
+
+    print("=== crosswalk written -> %s" % OUT_JSON)
+    print("exact-fingerprint mapped : %d/28" % n_exact)
+    print("any-evidence mapped      : %d/28" % n_any)
+    print("unmapped                 : %s" % n_unmapped)
+    print("genes with candidates    : %d/17" % len(gm))
+    print("\n--- key spot checks ---")
+    for want in ("CS", "ICDH", "SDH", "PDH", "GOX", "CITex"):
+        e = next(x for x in entries if x["refined"] == want)
+        tops = ", ".join("%s(%s)" % (m["iJB1325"], m["evidence"][:2])
+                         for m in e["matches"][:3]) or "-"
+        print("  %-6s -> %s" % (want, tops))
+    for g in ("citA", "cexA", "goxC", "sdhA"):
+        c = gm.get(g, [])
+        print("  gene %-6s -> %d candidates, e.g. %s"
+              % (g, len(c), [x["gene"] for x in c[:4]]))
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
