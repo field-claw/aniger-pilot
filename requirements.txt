@@ -1,1 +1,2 @@
-Y29icmE+PTAuMzEKbnVtcHk+PTEuMjQ=
+cobra>=0.31
+numpy>=1.24
