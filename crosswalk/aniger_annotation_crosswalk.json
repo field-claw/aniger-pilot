@@ -1,1 +1,961 @@
-ew0KICJkaXJlY3Rpb24iOiAicmVmaW5lZF9jY20oMjhyeG4sMTdnZW5lcykgLT4gaUpCMTMyNSgyMzIwcnhuLDEzMjVnZW5lcykiLA0KICJtZXRob2QiOiAiRTEgc3RvaWNoaW9tZXRyaWMgZmluZ2VycHJpbnQ7IEUyIGN1cmF0ZWQgbmFtZSBrZXl3b3JkczsgZ2VuZXMgcHJvcGFnYXRlZCB0aHJvdWdoIEdQUnMgKG5vIHNlcXVlbmNlIGFsaWdubWVudCkiLA0KICJjb3VudHMiOiB7DQogICJyZWZpbmVkX3JlYWN0aW9ucyI6IDI4LA0KICAibWFwcGVkX2V4YWN0X2ZpbmdlcnByaW50IjogNywNCiAgIm1hcHBlZF9hbnkiOiAxNSwNCiAgInVubWFwcGVkIjogWw0KICAgIkVYX3Bob3MiLA0KICAgIlBIT1N0IiwNCiAgICJFWF9jaXQiLA0KICAgIkVYX2dsdWNvbiIsDQogICAiRU1QX3B5ciIsDQogICAiRU1QX3BlcCIsDQogICAiQVRQX3NpbmsiLA0KICAgIkJJT01BU1MiLA0KICAgIkRNX2JpbyIsDQogICAiQkdDX05SUFMiLA0KICAgIkJHQ19QS1MiLA0KICAgIkRNX3NtMSIsDQogICAiRE1fc20yIg0KICBdLA0KICAiZ2VuZXNfd2l0aF9jYW5kaWRhdGVzIjogMTcNCiB9LA0KICJyZWFjdGlvbl9jcm9zc3dhbGsiOiBbDQogIHsNCiAgICJyZWZpbmVkIjogIkVYX2dsYyIsDQogICAicmVmaW5lZF9ncHIiOiAiIiwNCiAgICJtYXRjaGVzIjogWw0KICAgIHsNCiAgICAgImlKQjEzMjUiOiAiQk9VTkRBUllfYkRHTENlIiwNCiAgICAgIm5hbWUiOiAiIiwNCiAgICAgImV2aWRlbmNlIjogIkUxX2ZpbmdlcnByaW50Ig0KICAgIH0sDQogICAgew0KICAgICAiaUpCMTMyNSI6ICJCT1VOREFSWV9ER0xDZSIsDQogICAgICJuYW1lIjogIiIsDQogICAgICJldmlkZW5jZSI6ICJFMV9maW5nZXJwcmludCINCiAgICB9LA0KICAgIHsNCiAgICAgImlKQjEzMjUiOiAiQk9VTkRBUllfRlJVZSIsDQogICAgICJuYW1lIjogIiIsDQogICAgICJldmlkZW5jZSI6ICJFMV9maW5nZXJwcmludCINCiAgICB9LA0KICAgIHsNCiAgICAgImlKQjEzMjUiOiAiQk9VTkRBUllfR0xBQ2UiLA0KICAgICAibmFtZSI6ICIiLA0KICAgICAiZXZpZGVuY2UiOiAiRTFfZmluZ2VycHJpbnQiDQogICAgfSwNCiAgICB7DQogICAgICJpSkIxMzI1IjogIkJPVU5EQVJZX0dMQ2UiLA0KICAgICAibmFtZSI6ICIiLA0KICAgICAiZXZpZGVuY2UiOiAiRTFfZmluZ2VycHJpbnQiDQogICAgfSwNCiAgICB7DQogICAgICJpSkIxMzI1IjogIkJPVU5EQVJZX01BTmUiLA0KICAgICAibmFtZSI6ICIiLA0KICAgICAiZXZpZGVuY2UiOiAiRTFfZmluZ2VycHJpbnQiDQogICAgfQ0KICAgXSwNCiAgICJuX21hdGNoZXMiOiAxMA0KICB9LA0KICB7DQogICAicmVmaW5lZCI6ICJHTEN0IiwNCiAgICJyZWZpbmVkX2dwciI6ICJoeGtBIiwNCiAgICJtYXRjaGVzIjogWw0KICAgIHsNCiAgICAgImlKQjEzMjUiOiAicjEiLA0KICAgICAibmFtZSI6ICJBbGRvc2UgMS1lcGltZXJhc2UiLA0KICAgICAiZXZpZGVuY2UiOiAiRTFfZmluZ2VycHJpbnQiDQogICAgfSwNCiAgICB7DQogICAgICJpSkIxMzI1IjogInIyIiwNCiAgICAgIm5hbWUiOiAiYWxkb3NlLTEtZXBpbWVyYXNlIiwNCiAgICAgImV2aWRlbmNlIjogIkUxX2ZpbmdlcnByaW50Ig0KICAgIH0sDQogICAgew0KICAgICAiaUpCMTMyNSI6ICJyNCIsDQogICAgICJuYW1lIjogImFsZG9zZS0xLWVwaW1lcmFzZSIsDQogICAgICJldmlkZW5jZSI6ICJFMV9maW5nZXJwcmludCINCiAgICB9LA0KICAgIHsNCiAgICAgImlKQjEzMjUiOiAicjEwMzciLA0KICAgICAibmFtZSI6ICJHYWxhY3Rvc2UgdHJhbnNwb3J0IiwNCiAgICAgImV2aWRlbmNlIjogIkUxX2ZpbmdlcnByaW50Ig0KICAgIH0sDQogICAgew0KICAgICAiaUpCMTMyNSI6ICJyMTA0N2EiLA0KICAgICAibmFtZSI6ICIiLA0KICAgICAiZXZpZGVuY2UiOiAiRTFfZmluZ2VycHJpbnQiDQogICAgfSwNCiAgICB7DQogICAgICJpSkIxMzI1IjogInIxMDQ4IiwNCiAgICAgIm5hbWUiOiAiIiwNCiAgICAgImV2aWRlbmNlIjogIkUxX2ZpbmdlcnByaW50Ig0KICAgIH0NCiAgIF0sDQogICAibl9tYXRjaGVzIjogMTgNCiAgfSwNCiAgew0KICAgInJlZmluZWQiOiAiRVhfcGhvcyIsDQogICAicmVmaW5lZF9ncHIiOiAiIiwNCiAgICJtYXRjaGVzIjogW10sDQogICAibl9tYXRjaGVzIjogMA0KICB9LA0KICB7DQogICAicmVmaW5lZCI6ICJQSE9TdCIsDQogICAicmVmaW5lZF9ncHIiOiAicGhvQSIsDQogICAibWF0Y2hlcyI6IFtdLA0KICAgIm5fbWF0Y2hlcyI6IDANCiAgfSwNCiAgew0KICAgInJlZmluZWQiOiAiRVhfY2l0IiwNCiAgICJyZWZpbmVkX2dwciI6ICIiLA0KICAgIm1hdGNoZXMiOiBbXSwNCiAgICJuX21hdGNoZXMiOiAwDQogIH0sDQogIHsNCiAgICJyZWZpbmVkIjogIkNJVGV4IiwNCiAgICJyZWZpbmVkX2dwciI6ICJjZXhBIiwNCiAgICJtYXRjaGVzIjogWw0KICAgIHsNCiAgICAgImlKQjEzMjUiOiAicjMxYSIsDQogICAgICJuYW1lIjogIkNpdHJhdGUgc3ludGhhc2UiLA0KICAgICAiZXZpZGVuY2UiOiAiRTJfbmFtZTpjaXRyYXRlIg0KICAgIH0sDQogICAgew0KICAgICAiaUpCMTMyNSI6ICJyMzQiLA0KICAgICAibmFtZSI6ICJJc29jaXRyYXRlIGRlaHlkcm9nZW5hc2UgKE5BRFArKSIsDQogICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOmNpdHJhdGUiDQogICAgfSwNCiAgICB7DQogICAgICJpSkIxMzI1IjogInIzMCIsDQogICAgICJuYW1lIjogIklzb2NpdHJhdGUgZGVoeWRyb2dlbmFzZSAoTkFEKykiLA0KICAgICAiZXZpZGVuY2UiOiAiRTJfbmFtZTpjaXRyYXRlIg0KICAgIH0sDQogICAgew0KICAgICAiaUpCMTMyNSI6ICJyMzUiLA0KICAgICAibmFtZSI6ICJJc29jaXRyYXRlIGRlaHlkcm9nZW5hc2UgKE5BRFArKSIsDQogICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOmNpdHJhdGUiDQogICAgfSwNCiAgICB7DQogICAgICJpSkIxMzI1IjogInI0NiIsDQogICAgICJuYW1lIjogIklzb2NpdHJhdGUgbHlhc2UiLA0KICAgICAiZXZpZGVuY2UiOiAiRTJfbmFtZTpjaXRyYXRlIg0KICAgIH0sDQogICAgew0KICAgICAiaUpCMTMyNSI6ICJyNTBhIiwNCiAgICAgIm5hbWUiOiAiQVRQOmNpdHJhdGUgb3hhbG9hY2V0YXRlLWx5YXNlICgocHJvLTNTKS1DSDJDT08tIC0+YWNldHlsLUNvQSkgKEFUUC1kZXBob3NwaG9yeWxhdGluZykgc3VidW5pdCAyIiwNCiAgICAgImV2aWRlbmNlIjogIkUyX25hbWU6Y2l0cmF0ZSINCiAgICB9DQogICBdLA0KICAgIm5fbWF0Y2hlcyI6IDE5DQogIH0sDQogIHsNCiAgICJyZWZpbmVkIjogIkVYX2dsdWNvbiIsDQogICAicmVmaW5lZF9ncHIiOiAiIiwNCiAgICJtYXRjaGVzIjogW10sDQogICAibl9tYXRjaGVzIjogMA0KICB9LA0KICB7DQogICAicmVmaW5lZCI6ICJFWF9vMiIsDQogICAicmVmaW5lZF9ncHIiOiAiIiwNCiAgICJtYXRjaGVzIjogWw0KICAgIHsNCiAgICAgImlKQjEzMjUiOiAiQk9VTkRBUllfTzJlIiwNCiAgICAgIm5hbWUiOiAiIiwNCiAgICAgImV2aWRlbmNlIjogIkUxX2ZpbmdlcnByaW50Ig0KICAgIH0NCiAgIF0sDQogICAibl9tYXRjaGVzIjogMQ0KICB9LA0KICB7DQogICAicmVmaW5lZCI6ICJFWF9oMm8yIiwNCiAgICJyZWZpbmVkX2dwciI6ICIiLA0KICAgIm1hdGNoZXMiOiBbDQogICAgew0KICAgICAiaUpCMTMyNSI6ICJCT1VOREFSWV9IMk8yZSIsDQogICAgICJuYW1lIjogIiIsDQogICAgICJldmlkZW5jZSI6ICJFMV9maW5nZXJwcmludCINCiAgICB9DQogICBdLA0KICAgIm5fbWF0Y2hlcyI6IDENCiAgfSwNCiAgew0KICAgInJlZmluZWQiOiAiRVhfY28yIiwNCiAgICJyZWZpbmVkX2dwciI6ICIiLA0KICAgIm1hdGNoZXMiOiBbDQogICAgew0KICAgICAiaUpCMTMyNSI6ICJCT1VOREFSWV9DTzJlIiwNCiAgICAgIm5hbWUiOiAiIiwNCiAgICAgImV2aWRlbmNlIjogIkUxX2ZpbmdlcnByaW50Ig0KICAgIH0NCiAgIF0sDQogICAibl9tYXRjaGVzIjogMQ0KICB9LA0KICB7DQogICAicmVmaW5lZCI6ICJFWF9oMm8iLA0KICAgInJlZmluZWRfZ3ByIjogIiIsDQogICAibWF0Y2hlcyI6IFsNCiAgICB7DQogICAgICJpSkIxMzI1IjogIkJPVU5EQVJZX0gyT2UiLA0KICAgICAibmFtZSI6ICIiLA0KICAgICAiZXZpZGVuY2UiOiAiRTFfZmluZ2VycHJpbnQiDQogICAgfQ0KICAgXSwNCiAgICJuX21hdGNoZXMiOiAxDQogIH0sDQogIHsNCiAgICJyZWZpbmVkIjogIkVYX2giLA0KICAgInJlZmluZWRfZ3ByIjogIiIsDQogICAibWF0Y2hlcyI6IFsNCiAgICB7DQogICAgICJpSkIxMzI1IjogIkJPVU5EQVJZX0hlIiwNCiAgICAgIm5hbWUiOiAiIiwNCiAgICAgImV2aWRlbmNlIjogIkUxX2ZpbmdlcnByaW50Ig0KICAgIH0NCiAgIF0sDQogICAibl9tYXRjaGVzIjogMQ0KICB9LA0KICB7DQogICAicmVmaW5lZCI6ICJFTVBfcHlyIiwNCiAgICJyZWZpbmVkX2dwciI6ICJFTVAiLA0KICAgIm1hdGNoZXMiOiBbXSwNCiAgICJuX21hdGNoZXMiOiAwDQogIH0sDQogIHsNCiAgICJyZWZpbmVkIjogIkVNUF9wZXAiLA0KICAgInJlZmluZWRfZ3ByIjogIkVNUCIsDQogICAibWF0Y2hlcyI6IFtdLA0KICAgIm5fbWF0Y2hlcyI6IDANCiAgfSwNCiAgew0KICAgInJlZmluZWQiOiAiUERIIiwNCiAgICJyZWZpbmVkX2dwciI6ICJwZGhBIiwNCiAgICJtYXRjaGVzIjogWw0KICAgIHsNCiAgICAgImlKQjEzMjUiOiAicjU2YSIsDQogICAgICJuYW1lIjogIlB5cnV2YXRlIGRlaHlkcm9nZW5hc2UgKGxpcG9hbWlkZSkiLA0KICAgICAiZXZpZGVuY2UiOiAiRTJfbmFtZTpweXJ1dmF0ZSBkZWh5ZHJvZ2VuYXNlIg0KICAgIH0NCiAgIF0sDQogICAibl9tYXRjaGVzIjogMQ0KICB9LA0KICB7DQogICAicmVmaW5lZCI6ICJDUyIsDQogICAicmVmaW5lZF9ncHIiOiAiY2l0QSIsDQogICAibWF0Y2hlcyI6IFsNCiAgICB7DQogICAgICJpSkIxMzI1IjogInIzMWEiLA0KICAgICAibmFtZSI6ICJDaXRyYXRlIHN5bnRoYXNlIiwNCiAgICAgImV2aWRlbmNlIjogIkUyX25hbWU6Y2l0cmF0ZSBzeW50aGFzZSINCiAgICB9LA0KICAgIHsNCiAgICAgImlKQjEzMjUiOiAicjcxIiwNCiAgICAgIm5hbWUiOiAiMi1NZXRoeWxjaXRyYXRlIHN5bnRoYXNlIiwNCiAgICAgImV2aWRlbmNlIjogIkUyX25hbWU6Y2l0cmF0ZSBzeW50aGFzZSINCiAgICB9LA0KICAgIHsNCiAgICAgImlKQjEzMjUiOiAicjM0MSIsDQogICAgICJuYW1lIjogIkhvbW9jaXRyYXRlIHN5bnRoYXNlIiwNCiAgICAgImV2aWRlbmNlIjogIkUyX25hbWU6Y2l0cmF0ZSBzeW50aGFzZSINCiAgICB9LA0KICAgIHsNCiAgICAgImlKQjEzMjUiOiAicjMxIiwNCiAgICAgIm5hbWUiOiAiQ2l0cmF0ZSBzeW50aGFzZSIsDQogICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOmNpdHJhdGUgc3ludGhhc2UiDQogICAgfQ0KICAgXSwNCiAgICJuX21hdGNoZXMiOiA0DQogIH0sDQogIHsNCiAgICJyZWZpbmVkIjogIkFDTyIsDQogICAicmVmaW5lZF9ncHIiOiAiYWNvQSIsDQogICAibWF0Y2hlcyI6IFsNCiAgICB7DQogICAgICJpSkIxMzI1IjogInIzMmEiLA0KICAgICAibmFtZSI6ICJBY29uaXRhdGUgaHlkcmF0YXNlIiwNCiAgICAgImV2aWRlbmNlIjogIkUyX25hbWU6YWNvbml0YXRlIGh5ZHJhdGFzZSINCiAgICB9LA0KICAgIHsNCiAgICAgImlKQjEzMjUiOiAicjMzYSIsDQogICAgICJuYW1lIjogIkFjb25pdGF0ZSBoeWRyYXRhc2UiLA0KICAgICAiZXZpZGVuY2UiOiAiRTJfbmFtZTphY29uaXRhdGUgaHlkcmF0YXNlIg0KICAgIH0sDQogICAgew0KICAgICAiaUpCMTMyNSI6ICJyMzUyIiwNCiAgICAgIm5hbWUiOiAiSG9tb2Fjb25pdGF0ZSBoeWRyYXRhc2UiLA0KICAgICAiZXZpZGVuY2UiOiAiRTJfbmFtZTphY29uaXRhdGUgaHlkcmF0YXNlIg0KICAgIH0sDQogICAgew0KICAgICAiaUpCMTMyNSI6ICJyMzJjIiwNCiAgICAgIm5hbWUiOiAiQWNvbml0YXRlIGh5ZHJhdGFzZSIsDQogICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOmFjb25pdGF0ZSBoeWRyYXRhc2UiDQogICAgfSwNCiAgICB7DQogICAgICJpSkIxMzI1IjogInIzM2MiLA0KICAgICAibmFtZSI6ICJBY29uaXRhdGUgaHlkcmF0YXNlIiwNCiAgICAgImV2aWRlbmNlIjogIkUyX25hbWU6YWNvbml0YXRlIGh5ZHJhdGFzZSINCiAgICB9DQogICBdLA0KICAgIm5fbWF0Y2hlcyI6IDUNCiAgfSwNCiAgew0KICAgInJlZmluZWQiOiAiSUNESCIsDQogICAicmVmaW5lZF9ncHIiOiAiaWRoQSIsDQogICAibWF0Y2hlcyI6IFsNCiAgICB7DQogICAgICJpSkIxMzI1IjogInIzNCIsDQogICAgICJuYW1lIjogIklzb2NpdHJhdGUgZGVoeWRyb2dlbmFzZSAoTkFEUCspIiwNCiAgICAgImV2aWRlbmNlIjogIkUyX25hbWU6aXNvY2l0cmF0ZSBkZWh5ZHJvZ2VuYXNlIg0KICAgIH0sDQogICAgew0KICAgICAiaUpCMTMyNSI6ICJyMzAiLA0KICAgICAibmFtZSI6ICJJc29jaXRyYXRlIGRlaHlkcm9nZW5hc2UgKE5BRCspIiwNCiAgICAgImV2aWRlbmNlIjogIkUyX25hbWU6aXNvY2l0cmF0ZSBkZWh5ZHJvZ2VuYXNlIg0KICAgIH0sDQogICAgew0KICAgICAiaUpCMTMyNSI6ICJyMzUiLA0KICAgICAibmFtZSI6ICJJc29jaXRyYXRlIGRlaHlkcm9nZW5hc2UgKE5BRFArKSIsDQogICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOmlzb2NpdHJhdGUgZGVoeWRyb2dlbmFzZSINCiAgICB9LA0KICAgIHsNCiAgICAgImlKQjEzMjUiOiAicjM1MyIsDQogICAgICJuYW1lIjogIkhvbW9pc29jaXRyYXRlIGRlaHlkcm9nZW5hc2UiLA0KICAgICAiZXZpZGVuY2UiOiAiRTJfbmFtZTppc29jaXRyYXRlIGRlaHlkcm9nZW5hc2UiDQogICAgfSwNCiAgICB7DQogICAgICJpSkIxMzI1IjogInIyODI5IiwNCiAgICAgIm5hbWUiOiAiSXNvY2l0cmF0ZSBkZWh5ZHJvZ2VuYXNlIChOQURQKykiLA0KICAgICAiZXZpZGVuY2UiOiAiRTJfbmFtZTppc29jaXRyYXRlIGRlaHlkcm9nZW5hc2UiDQogICAgfQ0KICAgXSwNCiAgICJuX21hdGNoZXMiOiA1DQogIH0sDQogIHsNCiAgICJyZWZpbmVkIjogIlNESCIsDQogICAicmVmaW5lZF9ncHIiOiAic2RoQSIsDQogICAibWF0Y2hlcyI6IFsNCiAgICB7DQogICAgICJpSkIxMzI1IjogInIzOSIsDQogICAgICJuYW1lIjogIlN1Y2NpbmF0ZSBkZWh5ZHJvZ2VuYXNlICh1YmlxdWlub25lKSIsDQogICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOnN1Y2NpbmF0ZSBkZWh5ZHJvZ2VuYXNlIg0KICAgIH0NCiAgIF0sDQogICAibl9tYXRjaGVzIjogMQ0KICB9LA0KICB7DQogICAicmVmaW5lZCI6ICJQUEMiLA0KICAgInJlZmluZWRfZ3ByIjogInBwY0EiLA0KICAgIm1hdGNoZXMiOiBbDQogICAgew0KICAgICAiaUpCMTMyNSI6ICJyMTkiLA0KICAgICAibmFtZSI6ICJQeXJ1dmF0ZSBjYXJib3h5bGFzZSIsDQogICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOmNhcmJveHlsYXNlIg0KICAgIH0sDQogICAgew0KICAgICAiaUpCMTMyNSI6ICJyMjAiLA0KICAgICAibmFtZSI6ICJQeXJ1dmF0ZSBjYXJib3h5bGFzZSIsDQogICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOmNhcmJveHlsYXNlIg0KICAgIH0sDQogICAgew0KICAgICAiaUpCMTMyNSI6ICJyNTIiLA0KICAgICAibmFtZSI6ICJPeGFsYXRlIGRlY2FyYm94eWxhc2UiLA0KICAgICAiZXZpZGVuY2UiOiAiRTJfbmFtZTpjYXJib3h5bGFzZSINCiAgICB9LA0KICAgIHsNCiAgICAgImlKQjEzMjUiOiAicjU2IiwNCiAgICAgIm5hbWUiOiAiT3hhbGF0ZSBkZWNhcmJveHlsYXNlIiwNCiAgICAgImV2aWRlbmNlIjogIkUyX25hbWU6Y2FyYm94eWxhc2UiDQogICAgfSwNCiAgICB7DQogICAgICJpSkIxMzI1IjogInI1OGEiLA0KICAgICAibmFtZSI6ICJQeXJ1dmF0ZSBkZWNhcmJveHlsYXNlIiwNCiAgICAgImV2aWRlbmNlIjogIkUyX25hbWU6Y2FyYm94eWxhc2UiDQogICAgfSwNCiAgICB7DQogICAgICJpSkIxMzI1IjogInI3NWEiLA0KICAgICAibmFtZSI6ICJHbHV0YW1hdGUgZGVjYXJib3h5bGFzZSIsDQogICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOmNhcmJveHlsYXNlIg0KICAgIH0NCiAgIF0sDQogICAibl9tYXRjaGVzIjogMzYNCiAgfSwNCiAgew0KICAgInJlZmluZWQiOiAiQVRQX3NpbmsiLA0KICAgInJlZmluZWRfZ3ByIjogIiIsDQogICAibWF0Y2hlcyI6IFtdLA0KICAgIm5fbWF0Y2hlcyI6IDANCiAgfSwNCiAgew0KICAgInJlZmluZWQiOiAiQklPTUFTUyIsDQogICAicmVmaW5lZF9ncHIiOiAiYmlvbWFzcyIsDQogICAibWF0Y2hlcyI6IFtdLA0KICAgIm5fbWF0Y2hlcyI6IDANCiAgfSwNCiAgew0KICAgInJlZmluZWQiOiAiRE1fYmlvIiwNCiAgICJyZWZpbmVkX2dwciI6ICIiLA0KICAgIm1hdGNoZXMiOiBbXSwNCiAgICJuX21hdGNoZXMiOiAwDQogIH0sDQogIHsNCiAgICJyZWZpbmVkIjogIkdPWCIsDQogICAicmVmaW5lZF9ncHIiOiAiZ294QyBhbmQgZ294QSBhbmQgZ294QiBhbmQgZ294RCIsDQogICAibWF0Y2hlcyI6IFsNCiAgICB7DQogICAgICJpSkIxMzI1IjogInIxNjNhIiwNCiAgICAgIm5hbWUiOiAiR2x1Y29zZSBveGlkYXNlIiwNCiAgICAgImV2aWRlbmNlIjogIkUyX25hbWU6Z2x1Y29zZSBveGlkYXNlIg0KICAgIH0sDQogICAgew0KICAgICAiaUpCMTMyNSI6ICJyMTY0YSIsDQogICAgICJuYW1lIjogIkdsdWNvc2Ugb3hpZGFzZSIsDQogICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOmdsdWNvc2Ugb3hpZGFzZSINCiAgICB9DQogICBdLA0KICAgIm5fbWF0Y2hlcyI6IDINCiAgfSwNCiAgew0KICAgInJlZmluZWQiOiAiQkdDX05SUFMiLA0KICAgInJlZmluZWRfZ3ByIjogImNsdXN0ZXJfQV9ucnBzIiwNCiAgICJtYXRjaGVzIjogW10sDQogICAibl9tYXRjaGVzIjogMA0KICB9LA0KICB7DQogICAicmVmaW5lZCI6ICJCR0NfUEtTIiwNCiAgICJyZWZpbmVkX2dwciI6ICJjbHVzdGVyX0JfcGtzIiwNCiAgICJtYXRjaGVzIjogW10sDQogICAibl9tYXRjaGVzIjogMA0KICB9LA0KICB7DQogICAicmVmaW5lZCI6ICJETV9zbTEiLA0KICAgInJlZmluZWRfZ3ByIjogIiIsDQogICAibWF0Y2hlcyI6IFtdLA0KICAgIm5fbWF0Y2hlcyI6IDANCiAgfSwNCiAgew0KICAgInJlZmluZWQiOiAiRE1fc20yIiwNCiAgICJyZWZpbmVkX2dwciI6ICIiLA0KICAgIm1hdGNoZXMiOiBbXSwNCiAgICJuX21hdGNoZXMiOiAwDQogIH0NCiBdLA0KICJnZW5lX2NhbmRpZGF0ZXMiOiB7DQogICJoeGtBIjogWw0KICAgew0KICAgICJ2aWEiOiAicjEiLA0KICAgICJldmlkZW5jZSI6ICJFMV9maW5nZXJwcmludCIsDQogICAgImdlbmUiOiAiMTEyODUwMyINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMiIsDQogICAgImV2aWRlbmNlIjogIkUxX2ZpbmdlcnByaW50IiwNCiAgICAiZ2VuZSI6ICIxMTI4NTAzIg0KICAgfSwNCiAgIHsNCiAgICAidmlhIjogInI0IiwNCiAgICAiZXZpZGVuY2UiOiAiRTFfZmluZ2VycHJpbnQiLA0KICAgICJnZW5lIjogIjExMjg1MDMiDQogICB9LA0KICAgew0KICAgICJ2aWEiOiAicjEwMzciLA0KICAgICJldmlkZW5jZSI6ICJFMV9maW5nZXJwcmludCIsDQogICAgImdlbmUiOiAiMTA5OTU4NSINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMTAzNyIsDQogICAgImV2aWRlbmNlIjogIkUxX2ZpbmdlcnByaW50IiwNCiAgICAiZ2VuZSI6ICIxMTQyMzEwIg0KICAgfSwNCiAgIHsNCiAgICAidmlhIjogInIxMDM3IiwNCiAgICAiZXZpZGVuY2UiOiAiRTFfZmluZ2VycHJpbnQiLA0KICAgICJnZW5lIjogIjQxNjk4Ig0KICAgfSwNCiAgIHsNCiAgICAidmlhIjogInIxMDM3IiwNCiAgICAiZXZpZGVuY2UiOiAiRTFfZmluZ2VycHJpbnQiLA0KICAgICJnZW5lIjogIjExNDMxNTgiDQogICB9LA0KICAgew0KICAgICJ2aWEiOiAicjEwMzciLA0KICAgICJldmlkZW5jZSI6ICJFMV9maW5nZXJwcmludCIsDQogICAgImdlbmUiOiAiMTEyODMwOSINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMTAzNyIsDQogICAgImV2aWRlbmNlIjogIkUxX2ZpbmdlcnByaW50IiwNCiAgICAiZ2VuZSI6ICIxMTY3NzgwIg0KICAgfSwNCiAgIHsNCiAgICAidmlhIjogInIxMDM3IiwNCiAgICAiZXZpZGVuY2UiOiAiRTFfZmluZ2VycHJpbnQiLA0KICAgICJnZW5lIjogIjExNDM4NzQiDQogICB9LA0KICAgew0KICAgICJ2aWEiOiAicjEwMzciLA0KICAgICJldmlkZW5jZSI6ICJFMV9maW5nZXJwcmludCIsDQogICAgImdlbmUiOiAiMTEyMTg5NyINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMTAzNyIsDQogICAgImV2aWRlbmNlIjogIkUxX2ZpbmdlcnByaW50IiwNCiAgICAiZ2VuZSI6ICIxMTI1NDEwIg0KICAgfSwNCiAgIHsNCiAgICAidmlhIjogInIxMDM3IiwNCiAgICAiZXZpZGVuY2UiOiAiRTFfZmluZ2VycHJpbnQiLA0KICAgICJnZW5lIjogIjExNjk0ODAiDQogICB9LA0KICAgew0KICAgICJ2aWEiOiAicjEwMzciLA0KICAgICJldmlkZW5jZSI6ICJFMV9maW5nZXJwcmludCIsDQogICAgImdlbmUiOiAiMTE4OTQ5MCINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMTA0N2EiLA0KICAgICJldmlkZW5jZSI6ICJFMV9maW5nZXJwcmludCIsDQogICAgImdlbmUiOiAiMTE0NzY4NSINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMTA0N2EiLA0KICAgICJldmlkZW5jZSI6ICJFMV9maW5nZXJwcmludCIsDQogICAgImdlbmUiOiAiMTE0MzE1OCINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMTA0N2EiLA0KICAgICJldmlkZW5jZSI6ICJFMV9maW5nZXJwcmludCIsDQogICAgImdlbmUiOiAiMTE2MDkyMyINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMTA0N2EiLA0KICAgICJldmlkZW5jZSI6ICJFMV9maW5nZXJwcmludCIsDQogICAgImdlbmUiOiAiMTE0Mzg3NCINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMTA0N2EiLA0KICAgICJldmlkZW5jZSI6ICJFMV9maW5nZXJwcmludCIsDQogICAgImdlbmUiOiAiMTE4MzczNiINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMTA0N2EiLA0KICAgICJldmlkZW5jZSI6ICJFMV9maW5nZXJwcmludCIsDQogICAgImdlbmUiOiAiMTEyNTQxMCINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMTA0N2EiLA0KICAgICJldmlkZW5jZSI6ICJFMV9maW5nZXJwcmludCIsDQogICAgImdlbmUiOiAiMTE0NDY1MSINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMTA0N2EiLA0KICAgICJldmlkZW5jZSI6ICJFMV9maW5nZXJwcmludCIsDQogICAgImdlbmUiOiAiMTE2OTQ4MCINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMTA0N2EiLA0KICAgICJldmlkZW5jZSI6ICJFMV9maW5nZXJwcmludCIsDQogICAgImdlbmUiOiAiMTE4OTU1NCINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMTA0N2EiLA0KICAgICJldmlkZW5jZSI6ICJFMV9maW5nZXJwcmludCIsDQogICAgImdlbmUiOiAiMTEyNzg2NCINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMTA0N2EiLA0KICAgICJldmlkZW5jZSI6ICJFMV9maW5nZXJwcmludCIsDQogICAgImdlbmUiOiAiMTE4NDkzMSINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMTA0N2EiLA0KICAgICJldmlkZW5jZSI6ICJFMV9maW5nZXJwcmludCIsDQogICAgImdlbmUiOiAiMTEyODMwOSINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMTA0N2EiLA0KICAgICJldmlkZW5jZSI6ICJFMV9maW5nZXJwcmludCIsDQogICAgImdlbmUiOiAiMTE2Nzc4MCINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMTA0N2EiLA0KICAgICJldmlkZW5jZSI6ICJFMV9maW5nZXJwcmludCIsDQogICAgImdlbmUiOiAiMTIwOTA0MiINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMTA0N2EiLA0KICAgICJldmlkZW5jZSI6ICJFMV9maW5nZXJwcmludCIsDQogICAgImdlbmUiOiAiMTIwMjc5MyINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMTA0N2EiLA0KICAgICJldmlkZW5jZSI6ICJFMV9maW5nZXJwcmludCIsDQogICAgImdlbmUiOiAiMTEyMTg5NyINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMTA0N2EiLA0KICAgICJldmlkZW5jZSI6ICJFMV9maW5nZXJwcmludCIsDQogICAgImdlbmUiOiAiMTE1ODExNyINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMTA0N2EiLA0KICAgICJldmlkZW5jZSI6ICJFMV9maW5nZXJwcmludCIsDQogICAgImdlbmUiOiAiMTE0MzQ2NyINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMTA0OCIsDQogICAgImV2aWRlbmNlIjogIkUxX2ZpbmdlcnByaW50IiwNCiAgICAiZ2VuZSI6ICIxMTQzNDY3Ig0KICAgfQ0KICBdLA0KICAicGhvQSI6IFtdLA0KICAiY2V4QSI6IFsNCiAgIHsNCiAgICAidmlhIjogInIzMWEiLA0KICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOmNpdHJhdGUiLA0KICAgICJnZW5lIjogIjExNDM3ODIiDQogICB9LA0KICAgew0KICAgICJ2aWEiOiAicjMxYSIsDQogICAgImV2aWRlbmNlIjogIkUyX25hbWU6Y2l0cmF0ZSIsDQogICAgImdlbmUiOiAiMTE0MTY0NyINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMzQiLA0KICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOmNpdHJhdGUiLA0KICAgICJnZW5lIjogIjExNzU2NjYiDQogICB9LA0KICAgew0KICAgICJ2aWEiOiAicjMwIiwNCiAgICAiZXZpZGVuY2UiOiAiRTJfbmFtZTpjaXRyYXRlIiwNCiAgICAiZ2VuZSI6ICIxMTQ4Mzc1Ig0KICAgfSwNCiAgIHsNCiAgICAidmlhIjogInIzMCIsDQogICAgImV2aWRlbmNlIjogIkUyX25hbWU6Y2l0cmF0ZSIsDQogICAgImdlbmUiOiAiMTE0ODAyNSINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMzUiLA0KICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOmNpdHJhdGUiLA0KICAgICJnZW5lIjogIjExNzU2NjYiDQogICB9LA0KICAgew0KICAgICJ2aWEiOiAicjQ2IiwNCiAgICAiZXZpZGVuY2UiOiAiRTJfbmFtZTpjaXRyYXRlIiwNCiAgICAiZ2VuZSI6ICIxMTAyMTI4Ig0KICAgfSwNCiAgIHsNCiAgICAidmlhIjogInI1MGEiLA0KICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOmNpdHJhdGUiLA0KICAgICJnZW5lIjogIjExNDcxMzgiDQogICB9LA0KICAgew0KICAgICJ2aWEiOiAicjUwYSIsDQogICAgImV2aWRlbmNlIjogIkUyX25hbWU6Y2l0cmF0ZSIsDQogICAgImdlbmUiOiAiMTExMTYzNCINCiAgIH0NCiAgXSwNCiAgIkVNUCI6IFtdLA0KICAicGRoQSI6IFsNCiAgIHsNCiAgICAidmlhIjogInI1NmEiLA0KICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOnB5cnV2YXRlIGRlaHlkcm9nZW5hc2UiLA0KICAgICJnZW5lIjogIjEwMDUzMzYiDQogICB9LA0KICAgew0KICAgICJ2aWEiOiAicjU2YSIsDQogICAgImV2aWRlbmNlIjogIkUyX25hbWU6cHlydXZhdGUgZGVoeWRyb2dlbmFzZSIsDQogICAgImdlbmUiOiAiMTAxOTE2OSINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyNTZhIiwNCiAgICAiZXZpZGVuY2UiOiAiRTJfbmFtZTpweXJ1dmF0ZSBkZWh5ZHJvZ2VuYXNlIiwNCiAgICAiZ2VuZSI6ICIxMTEyMTM0Ig0KICAgfQ0KICBdLA0KICAiY2l0QSI6IFsNCiAgIHsNCiAgICAidmlhIjogInIzMWEiLA0KICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOmNpdHJhdGUgc3ludGhhc2UiLA0KICAgICJnZW5lIjogIjExNDM3ODIiDQogICB9LA0KICAgew0KICAgICJ2aWEiOiAicjMxYSIsDQogICAgImV2aWRlbmNlIjogIkUyX25hbWU6Y2l0cmF0ZSBzeW50aGFzZSIsDQogICAgImdlbmUiOiAiMTE0MTY0NyINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyNzEiLA0KICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOmNpdHJhdGUgc3ludGhhc2UiLA0KICAgICJnZW5lIjogIjExNDM3ODIiDQogICB9LA0KICAgew0KICAgICJ2aWEiOiAicjM0MSIsDQogICAgImV2aWRlbmNlIjogIkUyX25hbWU6Y2l0cmF0ZSBzeW50aGFzZSIsDQogICAgImdlbmUiOiAiMTEyNjg3NiINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMzEiLA0KICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOmNpdHJhdGUgc3ludGhhc2UiLA0KICAgICJnZW5lIjogIjExMTQ2OTkiDQogICB9DQogIF0sDQogICJhY29BIjogWw0KICAgew0KICAgICJ2aWEiOiAicjMyYSIsDQogICAgImV2aWRlbmNlIjogIkUyX25hbWU6YWNvbml0YXRlIGh5ZHJhdGFzZSIsDQogICAgImdlbmUiOiAiMTIxODk2MCINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMzJhIiwNCiAgICAiZXZpZGVuY2UiOiAiRTJfbmFtZTphY29uaXRhdGUgaHlkcmF0YXNlIiwNCiAgICAiZ2VuZSI6ICIxMTQ4NjAzIg0KICAgfSwNCiAgIHsNCiAgICAidmlhIjogInIzMmEiLA0KICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOmFjb25pdGF0ZSBoeWRyYXRhc2UiLA0KICAgICJnZW5lIjogIjExNzU1NjciDQogICB9LA0KICAgew0KICAgICJ2aWEiOiAicjMyYSIsDQogICAgImV2aWRlbmNlIjogIkUyX25hbWU6YWNvbml0YXRlIGh5ZHJhdGFzZSIsDQogICAgImdlbmUiOiAiMTE4MTAzNCINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMzNhIiwNCiAgICAiZXZpZGVuY2UiOiAiRTJfbmFtZTphY29uaXRhdGUgaHlkcmF0YXNlIiwNCiAgICAiZ2VuZSI6ICIxMjE4OTYwIg0KICAgfSwNCiAgIHsNCiAgICAidmlhIjogInIzM2EiLA0KICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOmFjb25pdGF0ZSBoeWRyYXRhc2UiLA0KICAgICJnZW5lIjogIjExNDg2MDMiDQogICB9LA0KICAgew0KICAgICJ2aWEiOiAicjMzYSIsDQogICAgImV2aWRlbmNlIjogIkUyX25hbWU6YWNvbml0YXRlIGh5ZHJhdGFzZSIsDQogICAgImdlbmUiOiAiMTE3NTU2NyINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMzNhIiwNCiAgICAiZXZpZGVuY2UiOiAiRTJfbmFtZTphY29uaXRhdGUgaHlkcmF0YXNlIiwNCiAgICAiZ2VuZSI6ICIxMTgxMDM0Ig0KICAgfSwNCiAgIHsNCiAgICAidmlhIjogInIzNTIiLA0KICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOmFjb25pdGF0ZSBoeWRyYXRhc2UiLA0KICAgICJnZW5lIjogIjExMDQyNTciDQogICB9DQogIF0sDQogICJpZGhBIjogWw0KICAgew0KICAgICJ2aWEiOiAicjM0IiwNCiAgICAiZXZpZGVuY2UiOiAiRTJfbmFtZTppc29jaXRyYXRlIGRlaHlkcm9nZW5hc2UiLA0KICAgICJnZW5lIjogIjExNzU2NjYiDQogICB9LA0KICAgew0KICAgICJ2aWEiOiAicjMwIiwNCiAgICAiZXZpZGVuY2UiOiAiRTJfbmFtZTppc29jaXRyYXRlIGRlaHlkcm9nZW5hc2UiLA0KICAgICJnZW5lIjogIjExNDgzNzUiDQogICB9LA0KICAgew0KICAgICJ2aWEiOiAicjMwIiwNCiAgICAiZXZpZGVuY2UiOiAiRTJfbmFtZTppc29jaXRyYXRlIGRlaHlkcm9nZW5hc2UiLA0KICAgICJnZW5lIjogIjExNDgwMjUiDQogICB9LA0KICAgew0KICAgICJ2aWEiOiAicjM1IiwNCiAgICAiZXZpZGVuY2UiOiAiRTJfbmFtZTppc29jaXRyYXRlIGRlaHlkcm9nZW5hc2UiLA0KICAgICJnZW5lIjogIjExNzU2NjYiDQogICB9LA0KICAgew0KICAgICJ2aWEiOiAicjM1MyIsDQogICAgImV2aWRlbmNlIjogIkUyX25hbWU6aXNvY2l0cmF0ZSBkZWh5ZHJvZ2VuYXNlIiwNCiAgICAiZ2VuZSI6ICIxMTIwMTQzIg0KICAgfSwNCiAgIHsNCiAgICAidmlhIjogInIyODI5IiwNCiAgICAiZXZpZGVuY2UiOiAiRTJfbmFtZTppc29jaXRyYXRlIGRlaHlkcm9nZW5hc2UiLA0KICAgICJnZW5lIjogIjExNzU2NjYiDQogICB9DQogIF0sDQogICJzZGhBIjogWw0KICAgew0KICAgICJ2aWEiOiAicjM5IiwNCiAgICAiZXZpZGVuY2UiOiAiRTJfbmFtZTpzdWNjaW5hdGUgZGVoeWRyb2dlbmFzZSIsDQogICAgImdlbmUiOiAiMTE3NjgzMyINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMzkiLA0KICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOnN1Y2NpbmF0ZSBkZWh5ZHJvZ2VuYXNlIiwNCiAgICAiZ2VuZSI6ICIxMjE1MTExIg0KICAgfSwNCiAgIHsNCiAgICAidmlhIjogInIzOSIsDQogICAgImV2aWRlbmNlIjogIkUyX25hbWU6c3VjY2luYXRlIGRlaHlkcm9nZW5hc2UiLA0KICAgICJnZW5lIjogIjExNDMwNjUiDQogICB9LA0KICAgew0KICAgICJ2aWEiOiAicjM5IiwNCiAgICAiZXZpZGVuY2UiOiAiRTJfbmFtZTpzdWNjaW5hdGUgZGVoeWRyb2dlbmFzZSIsDQogICAgImdlbmUiOiAiMTIwMjgwOSINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMzkiLA0KICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOnN1Y2NpbmF0ZSBkZWh5ZHJvZ2VuYXNlIiwNCiAgICAiZ2VuZSI6ICIxMTM2MzQwIg0KICAgfSwNCiAgIHsNCiAgICAidmlhIjogInIzOSIsDQogICAgImV2aWRlbmNlIjogIkUyX25hbWU6c3VjY2luYXRlIGRlaHlkcm9nZW5hc2UiLA0KICAgICJnZW5lIjogIjExNzQ1ODgiDQogICB9LA0KICAgew0KICAgICJ2aWEiOiAicjM5IiwNCiAgICAiZXZpZGVuY2UiOiAiRTJfbmFtZTpzdWNjaW5hdGUgZGVoeWRyb2dlbmFzZSIsDQogICAgImdlbmUiOiAiMTE0NDE4MyINCiAgIH0NCiAgXSwNCiAgInBwY0EiOiBbDQogICB7DQogICAgInZpYSI6ICJyMTkiLA0KICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOmNhcmJveHlsYXNlIiwNCiAgICAiZ2VuZSI6ICIxMDMxOTk2Ig0KICAgfSwNCiAgIHsNCiAgICAidmlhIjogInIyMCIsDQogICAgImV2aWRlbmNlIjogIkUyX25hbWU6Y2FyYm94eWxhc2UiLA0KICAgICJnZW5lIjogIjExMjAxNjIiDQogICB9LA0KICAgew0KICAgICJ2aWEiOiAicjUyIiwNCiAgICAiZXZpZGVuY2UiOiAiRTJfbmFtZTpjYXJib3h5bGFzZSIsDQogICAgImdlbmUiOiAiMTE2NDE1MyINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyNTYiLA0KICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOmNhcmJveHlsYXNlIiwNCiAgICAiZ2VuZSI6ICIxMTM3NzEyIg0KICAgfSwNCiAgIHsNCiAgICAidmlhIjogInI1OGEiLA0KICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOmNhcmJveHlsYXNlIiwNCiAgICAiZ2VuZSI6ICIxMDg4NzIzIg0KICAgfSwNCiAgIHsNCiAgICAidmlhIjogInI1OGEiLA0KICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOmNhcmJveHlsYXNlIiwNCiAgICAiZ2VuZSI6ICIxMTE0ODY4Ig0KICAgfSwNCiAgIHsNCiAgICAidmlhIjogInI1OGEiLA0KICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOmNhcmJveHlsYXNlIiwNCiAgICAiZ2VuZSI6ICIxMTMxOTY5Ig0KICAgfSwNCiAgIHsNCiAgICAidmlhIjogInI3NWEiLA0KICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOmNhcmJveHlsYXNlIiwNCiAgICAiZ2VuZSI6ICIxMTQ4NTQ1Ig0KICAgfSwNCiAgIHsNCiAgICAidmlhIjogInI3NWEiLA0KICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOmNhcmJveHlsYXNlIiwNCiAgICAiZ2VuZSI6ICIxMTU3ODIwIg0KICAgfQ0KICBdLA0KICAiYmlvbWFzcyI6IFtdLA0KICAiZ294QyI6IFsNCiAgIHsNCiAgICAidmlhIjogInIxNjNhIiwNCiAgICAiZXZpZGVuY2UiOiAiRTJfbmFtZTpnbHVjb3NlIG94aWRhc2UiLA0KICAgICJnZW5lIjogIjExNzM5NDQiDQogICB9LA0KICAgew0KICAgICJ2aWEiOiAicjE2M2EiLA0KICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOmdsdWNvc2Ugb3hpZGFzZSIsDQogICAgImdlbmUiOiAiMTEzMjk1NSINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMTY0YSIsDQogICAgImV2aWRlbmNlIjogIkUyX25hbWU6Z2x1Y29zZSBveGlkYXNlIiwNCiAgICAiZ2VuZSI6ICIxMDg0NDIxIg0KICAgfSwNCiAgIHsNCiAgICAidmlhIjogInIxNjRhIiwNCiAgICAiZXZpZGVuY2UiOiAiRTJfbmFtZTpnbHVjb3NlIG94aWRhc2UiLA0KICAgICJnZW5lIjogIjExMzI5NTUiDQogICB9DQogIF0sDQogICJnb3hBIjogWw0KICAgew0KICAgICJ2aWEiOiAicjE2M2EiLA0KICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOmdsdWNvc2Ugb3hpZGFzZSIsDQogICAgImdlbmUiOiAiMTE3Mzk0NCINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMTYzYSIsDQogICAgImV2aWRlbmNlIjogIkUyX25hbWU6Z2x1Y29zZSBveGlkYXNlIiwNCiAgICAiZ2VuZSI6ICIxMTMyOTU1Ig0KICAgfSwNCiAgIHsNCiAgICAidmlhIjogInIxNjRhIiwNCiAgICAiZXZpZGVuY2UiOiAiRTJfbmFtZTpnbHVjb3NlIG94aWRhc2UiLA0KICAgICJnZW5lIjogIjEwODQ0MjEiDQogICB9LA0KICAgew0KICAgICJ2aWEiOiAicjE2NGEiLA0KICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOmdsdWNvc2Ugb3hpZGFzZSIsDQogICAgImdlbmUiOiAiMTEzMjk1NSINCiAgIH0NCiAgXSwNCiAgImdveEIiOiBbDQogICB7DQogICAgInZpYSI6ICJyMTYzYSIsDQogICAgImV2aWRlbmNlIjogIkUyX25hbWU6Z2x1Y29zZSBveGlkYXNlIiwNCiAgICAiZ2VuZSI6ICIxMTczOTQ0Ig0KICAgfSwNCiAgIHsNCiAgICAidmlhIjogInIxNjNhIiwNCiAgICAiZXZpZGVuY2UiOiAiRTJfbmFtZTpnbHVjb3NlIG94aWRhc2UiLA0KICAgICJnZW5lIjogIjExMzI5NTUiDQogICB9LA0KICAgew0KICAgICJ2aWEiOiAicjE2NGEiLA0KICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOmdsdWNvc2Ugb3hpZGFzZSIsDQogICAgImdlbmUiOiAiMTA4NDQyMSINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMTY0YSIsDQogICAgImV2aWRlbmNlIjogIkUyX25hbWU6Z2x1Y29zZSBveGlkYXNlIiwNCiAgICAiZ2VuZSI6ICIxMTMyOTU1Ig0KICAgfQ0KICBdLA0KICAiZ294RCI6IFsNCiAgIHsNCiAgICAidmlhIjogInIxNjNhIiwNCiAgICAiZXZpZGVuY2UiOiAiRTJfbmFtZTpnbHVjb3NlIG94aWRhc2UiLA0KICAgICJnZW5lIjogIjExNzM5NDQiDQogICB9LA0KICAgew0KICAgICJ2aWEiOiAicjE2M2EiLA0KICAgICJldmlkZW5jZSI6ICJFMl9uYW1lOmdsdWNvc2Ugb3hpZGFzZSIsDQogICAgImdlbmUiOiAiMTEzMjk1NSINCiAgIH0sDQogICB7DQogICAgInZpYSI6ICJyMTY0YSIsDQogICAgImV2aWRlbmNlIjogIkUyX25hbWU6Z2x1Y29zZSBveGlkYXNlIiwNCiAgICAiZ2VuZSI6ICIxMDg0NDIxIg0KICAgfSwNCiAgIHsNCiAgICAidmlhIjogInIxNjRhIiwNCiAgICAiZXZpZGVuY2UiOiAiRTJfbmFtZTpnbHVjb3NlIG94aWRhc2UiLA0KICAgICJnZW5lIjogIjExMzI5NTUiDQogICB9DQogIF0sDQogICJjbHVzdGVyX0FfbnJwcyI6IFtdLA0KICAiY2x1c3Rlcl9CX3BrcyI6IFtdDQogfQ0KfQ==
+{
+ "direction": "refined_ccm(28rxn,17genes) -> iJB1325(2320rxn,1325genes)",
+ "method": "E1 stoichiometric fingerprint; E2 curated name keywords; genes propagated through GPRs (no sequence alignment)",
+ "counts": {
+  "refined_reactions": 28,
+  "mapped_exact_fingerprint": 7,
+  "mapped_any": 15,
+  "unmapped": [
+   "EX_phos",
+   "PHOSt",
+   "EX_cit",
+   "EX_glucon",
+   "EMP_pyr",
+   "EMP_pep",
+   "ATP_sink",
+   "BIOMASS",
+   "DM_bio",
+   "BGC_NRPS",
+   "BGC_PKS",
+   "DM_sm1",
+   "DM_sm2"
+  ],
+  "genes_with_candidates": 17
+ },
+ "reaction_crosswalk": [
+  {
+   "refined": "EX_glc",
+   "refined_gpr": "",
+   "matches": [
+    {
+     "iJB1325": "BOUNDARY_bDGLCe",
+     "name": "",
+     "evidence": "E1_fingerprint"
+    },
+    {
+     "iJB1325": "BOUNDARY_DGLCe",
+     "name": "",
+     "evidence": "E1_fingerprint"
+    },
+    {
+     "iJB1325": "BOUNDARY_FRUe",
+     "name": "",
+     "evidence": "E1_fingerprint"
+    },
+    {
+     "iJB1325": "BOUNDARY_GLACe",
+     "name": "",
+     "evidence": "E1_fingerprint"
+    },
+    {
+     "iJB1325": "BOUNDARY_GLCe",
+     "name": "",
+     "evidence": "E1_fingerprint"
+    },
+    {
+     "iJB1325": "BOUNDARY_MANe",
+     "name": "",
+     "evidence": "E1_fingerprint"
+    }
+   ],
+   "n_matches": 10
+  },
+  {
+   "refined": "GLCt",
+   "refined_gpr": "hxkA",
+   "matches": [
+    {
+     "iJB1325": "r1",
+     "name": "Aldose 1-epimerase",
+     "evidence": "E1_fingerprint"
+    },
+    {
+     "iJB1325": "r2",
+     "name": "aldose-1-epimerase",
+     "evidence": "E1_fingerprint"
+    },
+    {
+     "iJB1325": "r4",
+     "name": "aldose-1-epimerase",
+     "evidence": "E1_fingerprint"
+    },
+    {
+     "iJB1325": "r1037",
+     "name": "Galactose transport",
+     "evidence": "E1_fingerprint"
+    },
+    {
+     "iJB1325": "r1047a",
+     "name": "",
+     "evidence": "E1_fingerprint"
+    },
+    {
+     "iJB1325": "r1048",
+     "name": "",
+     "evidence": "E1_fingerprint"
+    }
+   ],
+   "n_matches": 18
+  },
+  {
+   "refined": "EX_phos",
+   "refined_gpr": "",
+   "matches": [],
+   "n_matches": 0
+  },
+  {
+   "refined": "PHOSt",
+   "refined_gpr": "phoA",
+   "matches": [],
+   "n_matches": 0
+  },
+  {
+   "refined": "EX_cit",
+   "refined_gpr": "",
+   "matches": [],
+   "n_matches": 0
+  },
+  {
+   "refined": "CITex",
+   "refined_gpr": "cexA",
+   "matches": [
+    {
+     "iJB1325": "r31a",
+     "name": "Citrate synthase",
+     "evidence": "E2_name:citrate"
+    },
+    {
+     "iJB1325": "r34",
+     "name": "Isocitrate dehydrogenase (NADP+)",
+     "evidence": "E2_name:citrate"
+    },
+    {
+     "iJB1325": "r30",
+     "name": "Isocitrate dehydrogenase (NAD+)",
+     "evidence": "E2_name:citrate"
+    },
+    {
+     "iJB1325": "r35",
+     "name": "Isocitrate dehydrogenase (NADP+)",
+     "evidence": "E2_name:citrate"
+    },
+    {
+     "iJB1325": "r46",
+     "name": "Isocitrate lyase",
+     "evidence": "E2_name:citrate"
+    },
+    {
+     "iJB1325": "r50a",
+     "name": "ATP:citrate oxaloacetate-lyase ((pro-3S)-CH2COO- ->acetyl-CoA) (ATP-dephosphorylating) subunit 2",
+     "evidence": "E2_name:citrate"
+    }
+   ],
+   "n_matches": 19
+  },
+  {
+   "refined": "EX_glucon",
+   "refined_gpr": "",
+   "matches": [],
+   "n_matches": 0
+  },
+  {
+   "refined": "EX_o2",
+   "refined_gpr": "",
+   "matches": [
+    {
+     "iJB1325": "BOUNDARY_O2e",
+     "name": "",
+     "evidence": "E1_fingerprint"
+    }
+   ],
+   "n_matches": 1
+  },
+  {
+   "refined": "EX_h2o2",
+   "refined_gpr": "",
+   "matches": [
+    {
+     "iJB1325": "BOUNDARY_H2O2e",
+     "name": "",
+     "evidence": "E1_fingerprint"
+    }
+   ],
+   "n_matches": 1
+  },
+  {
+   "refined": "EX_co2",
+   "refined_gpr": "",
+   "matches": [
+    {
+     "iJB1325": "BOUNDARY_CO2e",
+     "name": "",
+     "evidence": "E1_fingerprint"
+    }
+   ],
+   "n_matches": 1
+  },
+  {
+   "refined": "EX_h2o",
+   "refined_gpr": "",
+   "matches": [
+    {
+     "iJB1325": "BOUNDARY_H2Oe",
+     "name": "",
+     "evidence": "E1_fingerprint"
+    }
+   ],
+   "n_matches": 1
+  },
+  {
+   "refined": "EX_h",
+   "refined_gpr": "",
+   "matches": [
+    {
+     "iJB1325": "BOUNDARY_He",
+     "name": "",
+     "evidence": "E1_fingerprint"
+    }
+   ],
+   "n_matches": 1
+  },
+  {
+   "refined": "EMP_pyr",
+   "refined_gpr": "EMP",
+   "matches": [],
+   "n_matches": 0
+  },
+  {
+   "refined": "EMP_pep",
+   "refined_gpr": "EMP",
+   "matches": [],
+   "n_matches": 0
+  },
+  {
+   "refined": "PDH",
+   "refined_gpr": "pdhA",
+   "matches": [
+    {
+     "iJB1325": "r56a",
+     "name": "Pyruvate dehydrogenase (lipoamide)",
+     "evidence": "E2_name:pyruvate dehydrogenase"
+    }
+   ],
+   "n_matches": 1
+  },
+  {
+   "refined": "CS",
+   "refined_gpr": "citA",
+   "matches": [
+    {
+     "iJB1325": "r31a",
+     "name": "Citrate synthase",
+     "evidence": "E2_name:citrate synthase"
+    },
+    {
+     "iJB1325": "r71",
+     "name": "2-Methylcitrate synthase",
+     "evidence": "E2_name:citrate synthase"
+    },
+    {
+     "iJB1325": "r341",
+     "name": "Homocitrate synthase",
+     "evidence": "E2_name:citrate synthase"
+    },
+    {
+     "iJB1325": "r31",
+     "name": "Citrate synthase",
+     "evidence": "E2_name:citrate synthase"
+    }
+   ],
+   "n_matches": 4
+  },
+  {
+   "refined": "ACO",
+   "refined_gpr": "acoA",
+   "matches": [
+    {
+     "iJB1325": "r32a",
+     "name": "Aconitate hydratase",
+     "evidence": "E2_name:aconitate hydratase"
+    },
+    {
+     "iJB1325": "r33a",
+     "name": "Aconitate hydratase",
+     "evidence": "E2_name:aconitate hydratase"
+    },
+    {
+     "iJB1325": "r352",
+     "name": "Homoaconitate hydratase",
+     "evidence": "E2_name:aconitate hydratase"
+    },
+    {
+     "iJB1325": "r32c",
+     "name": "Aconitate hydratase",
+     "evidence": "E2_name:aconitate hydratase"
+    },
+    {
+     "iJB1325": "r33c",
+     "name": "Aconitate hydratase",
+     "evidence": "E2_name:aconitate hydratase"
+    }
+   ],
+   "n_matches": 5
+  },
+  {
+   "refined": "ICDH",
+   "refined_gpr": "idhA",
+   "matches": [
+    {
+     "iJB1325": "r34",
+     "name": "Isocitrate dehydrogenase (NADP+)",
+     "evidence": "E2_name:isocitrate dehydrogenase"
+    },
+    {
+     "iJB1325": "r30",
+     "name": "Isocitrate dehydrogenase (NAD+)",
+     "evidence": "E2_name:isocitrate dehydrogenase"
+    },
+    {
+     "iJB1325": "r35",
+     "name": "Isocitrate dehydrogenase (NADP+)",
+     "evidence": "E2_name:isocitrate dehydrogenase"
+    },
+    {
+     "iJB1325": "r353",
+     "name": "Homoisocitrate dehydrogenase",
+     "evidence": "E2_name:isocitrate dehydrogenase"
+    },
+    {
+     "iJB1325": "r2829",
+     "name": "Isocitrate dehydrogenase (NADP+)",
+     "evidence": "E2_name:isocitrate dehydrogenase"
+    }
+   ],
+   "n_matches": 5
+  },
+  {
+   "refined": "SDH",
+   "refined_gpr": "sdhA",
+   "matches": [
+    {
+     "iJB1325": "r39",
+     "name": "Succinate dehydrogenase (ubiquinone)",
+     "evidence": "E2_name:succinate dehydrogenase"
+    }
+   ],
+   "n_matches": 1
+  },
+  {
+   "refined": "PPC",
+   "refined_gpr": "ppcA",
+   "matches": [
+    {
+     "iJB1325": "r19",
+     "name": "Pyruvate carboxylase",
+     "evidence": "E2_name:carboxylase"
+    },
+    {
+     "iJB1325": "r20",
+     "name": "Pyruvate carboxylase",
+     "evidence": "E2_name:carboxylase"
+    },
+    {
+     "iJB1325": "r52",
+     "name": "Oxalate decarboxylase",
+     "evidence": "E2_name:carboxylase"
+    },
+    {
+     "iJB1325": "r56",
+     "name": "Oxalate decarboxylase",
+     "evidence": "E2_name:carboxylase"
+    },
+    {
+     "iJB1325": "r58a",
+     "name": "Pyruvate decarboxylase",
+     "evidence": "E2_name:carboxylase"
+    },
+    {
+     "iJB1325": "r75a",
+     "name": "Glutamate decarboxylase",
+     "evidence": "E2_name:carboxylase"
+    }
+   ],
+   "n_matches": 36
+  },
+  {
+   "refined": "ATP_sink",
+   "refined_gpr": "",
+   "matches": [],
+   "n_matches": 0
+  },
+  {
+   "refined": "BIOMASS",
+   "refined_gpr": "biomass",
+   "matches": [],
+   "n_matches": 0
+  },
+  {
+   "refined": "DM_bio",
+   "refined_gpr": "",
+   "matches": [],
+   "n_matches": 0
+  },
+  {
+   "refined": "GOX",
+   "refined_gpr": "goxC and goxA and goxB and goxD",
+   "matches": [
+    {
+     "iJB1325": "r163a",
+     "name": "Glucose oxidase",
+     "evidence": "E2_name:glucose oxidase"
+    },
+    {
+     "iJB1325": "r164a",
+     "name": "Glucose oxidase",
+     "evidence": "E2_name:glucose oxidase"
+    }
+   ],
+   "n_matches": 2
+  },
+  {
+   "refined": "BGC_NRPS",
+   "refined_gpr": "cluster_A_nrps",
+   "matches": [],
+   "n_matches": 0
+  },
+  {
+   "refined": "BGC_PKS",
+   "refined_gpr": "cluster_B_pks",
+   "matches": [],
+   "n_matches": 0
+  },
+  {
+   "refined": "DM_sm1",
+   "refined_gpr": "",
+   "matches": [],
+   "n_matches": 0
+  },
+  {
+   "refined": "DM_sm2",
+   "refined_gpr": "",
+   "matches": [],
+   "n_matches": 0
+  }
+ ],
+ "gene_candidates": {
+  "hxkA": [
+   {
+    "via": "r1",
+    "evidence": "E1_fingerprint",
+    "gene": "1128503"
+   },
+   {
+    "via": "r2",
+    "evidence": "E1_fingerprint",
+    "gene": "1128503"
+   },
+   {
+    "via": "r4",
+    "evidence": "E1_fingerprint",
+    "gene": "1128503"
+   },
+   {
+    "via": "r1037",
+    "evidence": "E1_fingerprint",
+    "gene": "1099585"
+   },
+   {
+    "via": "r1037",
+    "evidence": "E1_fingerprint",
+    "gene": "1142310"
+   },
+   {
+    "via": "r1037",
+    "evidence": "E1_fingerprint",
+    "gene": "41698"
+   },
+   {
+    "via": "r1037",
+    "evidence": "E1_fingerprint",
+    "gene": "1143158"
+   },
+   {
+    "via": "r1037",
+    "evidence": "E1_fingerprint",
+    "gene": "1128309"
+   },
+   {
+    "via": "r1037",
+    "evidence": "E1_fingerprint",
+    "gene": "1167780"
+   },
+   {
+    "via": "r1037",
+    "evidence": "E1_fingerprint",
+    "gene": "1143874"
+   },
+   {
+    "via": "r1037",
+    "evidence": "E1_fingerprint",
+    "gene": "1121897"
+   },
+   {
+    "via": "r1037",
+    "evidence": "E1_fingerprint",
+    "gene": "1125410"
+   },
+   {
+    "via": "r1037",
+    "evidence": "E1_fingerprint",
+    "gene": "1169480"
+   },
+   {
+    "via": "r1037",
+    "evidence": "E1_fingerprint",
+    "gene": "1189490"
+   },
+   {
+    "via": "r1047a",
+    "evidence": "E1_fingerprint",
+    "gene": "1147685"
+   },
+   {
+    "via": "r1047a",
+    "evidence": "E1_fingerprint",
+    "gene": "1143158"
+   },
+   {
+    "via": "r1047a",
+    "evidence": "E1_fingerprint",
+    "gene": "1160923"
+   },
+   {
+    "via": "r1047a",
+    "evidence": "E1_fingerprint",
+    "gene": "1143874"
+   },
+   {
+    "via": "r1047a",
+    "evidence": "E1_fingerprint",
+    "gene": "1183736"
+   },
+   {
+    "via": "r1047a",
+    "evidence": "E1_fingerprint",
+    "gene": "1125410"
+   },
+   {
+    "via": "r1047a",
+    "evidence": "E1_fingerprint",
+    "gene": "1144651"
+   },
+   {
+    "via": "r1047a",
+    "evidence": "E1_fingerprint",
+    "gene": "1169480"
+   },
+   {
+    "via": "r1047a",
+    "evidence": "E1_fingerprint",
+    "gene": "1189554"
+   },
+   {
+    "via": "r1047a",
+    "evidence": "E1_fingerprint",
+    "gene": "1127864"
+   },
+   {
+    "via": "r1047a",
+    "evidence": "E1_fingerprint",
+    "gene": "1184931"
+   },
+   {
+    "via": "r1047a",
+    "evidence": "E1_fingerprint",
+    "gene": "1128309"
+   },
+   {
+    "via": "r1047a",
+    "evidence": "E1_fingerprint",
+    "gene": "1167780"
+   },
+   {
+    "via": "r1047a",
+    "evidence": "E1_fingerprint",
+    "gene": "1209042"
+   },
+   {
+    "via": "r1047a",
+    "evidence": "E1_fingerprint",
+    "gene": "1202793"
+   },
+   {
+    "via": "r1047a",
+    "evidence": "E1_fingerprint",
+    "gene": "1121897"
+   },
+   {
+    "via": "r1047a",
+    "evidence": "E1_fingerprint",
+    "gene": "1158117"
+   },
+   {
+    "via": "r1047a",
+    "evidence": "E1_fingerprint",
+    "gene": "1143467"
+   },
+   {
+    "via": "r1048",
+    "evidence": "E1_fingerprint",
+    "gene": "1143467"
+   }
+  ],
+  "phoA": [],
+  "cexA": [
+   {
+    "via": "r31a",
+    "evidence": "E2_name:citrate",
+    "gene": "1143782"
+   },
+   {
+    "via": "r31a",
+    "evidence": "E2_name:citrate",
+    "gene": "1141647"
+   },
+   {
+    "via": "r34",
+    "evidence": "E2_name:citrate",
+    "gene": "1175666"
+   },
+   {
+    "via": "r30",
+    "evidence": "E2_name:citrate",
+    "gene": "1148375"
+   },
+   {
+    "via": "r30",
+    "evidence": "E2_name:citrate",
+    "gene": "1148025"
+   },
+   {
+    "via": "r35",
+    "evidence": "E2_name:citrate",
+    "gene": "1175666"
+   },
+   {
+    "via": "r46",
+    "evidence": "E2_name:citrate",
+    "gene": "1102128"
+   },
+   {
+    "via": "r50a",
+    "evidence": "E2_name:citrate",
+    "gene": "1147138"
+   },
+   {
+    "via": "r50a",
+    "evidence": "E2_name:citrate",
+    "gene": "1111634"
+   }
+  ],
+  "EMP": [],
+  "pdhA": [
+   {
+    "via": "r56a",
+    "evidence": "E2_name:pyruvate dehydrogenase",
+    "gene": "1005336"
+   },
+   {
+    "via": "r56a",
+    "evidence": "E2_name:pyruvate dehydrogenase",
+    "gene": "1019169"
+   },
+   {
+    "via": "r56a",
+    "evidence": "E2_name:pyruvate dehydrogenase",
+    "gene": "1112134"
+   }
+  ],
+  "citA": [
+   {
+    "via": "r31a",
+    "evidence": "E2_name:citrate synthase",
+    "gene": "1143782"
+   },
+   {
+    "via": "r31a",
+    "evidence": "E2_name:citrate synthase",
+    "gene": "1141647"
+   },
+   {
+    "via": "r71",
+    "evidence": "E2_name:citrate synthase",
+    "gene": "1143782"
+   },
+   {
+    "via": "r341",
+    "evidence": "E2_name:citrate synthase",
+    "gene": "1126876"
+   },
+   {
+    "via": "r31",
+    "evidence": "E2_name:citrate synthase",
+    "gene": "1114699"
+   }
+  ],
+  "acoA": [
+   {
+    "via": "r32a",
+    "evidence": "E2_name:aconitate hydratase",
+    "gene": "1218960"
+   },
+   {
+    "via": "r32a",
+    "evidence": "E2_name:aconitate hydratase",
+    "gene": "1148603"
+   },
+   {
+    "via": "r32a",
+    "evidence": "E2_name:aconitate hydratase",
+    "gene": "1175567"
+   },
+   {
+    "via": "r32a",
+    "evidence": "E2_name:aconitate hydratase",
+    "gene": "1181034"
+   },
+   {
+    "via": "r33a",
+    "evidence": "E2_name:aconitate hydratase",
+    "gene": "1218960"
+   },
+   {
+    "via": "r33a",
+    "evidence": "E2_name:aconitate hydratase",
+    "gene": "1148603"
+   },
+   {
+    "via": "r33a",
+    "evidence": "E2_name:aconitate hydratase",
+    "gene": "1175567"
+   },
+   {
+    "via": "r33a",
+    "evidence": "E2_name:aconitate hydratase",
+    "gene": "1181034"
+   },
+   {
+    "via": "r352",
+    "evidence": "E2_name:aconitate hydratase",
+    "gene": "1104257"
+   }
+  ],
+  "idhA": [
+   {
+    "via": "r34",
+    "evidence": "E2_name:isocitrate dehydrogenase",
+    "gene": "1175666"
+   },
+   {
+    "via": "r30",
+    "evidence": "E2_name:isocitrate dehydrogenase",
+    "gene": "1148375"
+   },
+   {
+    "via": "r30",
+    "evidence": "E2_name:isocitrate dehydrogenase",
+    "gene": "1148025"
+   },
+   {
+    "via": "r35",
+    "evidence": "E2_name:isocitrate dehydrogenase",
+    "gene": "1175666"
+   },
+   {
+    "via": "r353",
+    "evidence": "E2_name:isocitrate dehydrogenase",
+    "gene": "1120143"
+   },
+   {
+    "via": "r2829",
+    "evidence": "E2_name:isocitrate dehydrogenase",
+    "gene": "1175666"
+   }
+  ],
+  "sdhA": [
+   {
+    "via": "r39",
+    "evidence": "E2_name:succinate dehydrogenase",
+    "gene": "1176833"
+   },
+   {
+    "via": "r39",
+    "evidence": "E2_name:succinate dehydrogenase",
+    "gene": "1215111"
+   },
+   {
+    "via": "r39",
+    "evidence": "E2_name:succinate dehydrogenase",
+    "gene": "1143065"
+   },
+   {
+    "via": "r39",
+    "evidence": "E2_name:succinate dehydrogenase",
+    "gene": "1202809"
+   },
+   {
+    "via": "r39",
+    "evidence": "E2_name:succinate dehydrogenase",
+    "gene": "1136340"
+   },
+   {
+    "via": "r39",
+    "evidence": "E2_name:succinate dehydrogenase",
+    "gene": "1174588"
+   },
+   {
+    "via": "r39",
+    "evidence": "E2_name:succinate dehydrogenase",
+    "gene": "1144183"
+   }
+  ],
+  "ppcA": [
+   {
+    "via": "r19",
+    "evidence": "E2_name:carboxylase",
+    "gene": "1031996"
+   },
+   {
+    "via": "r20",
+    "evidence": "E2_name:carboxylase",
+    "gene": "1120162"
+   },
+   {
+    "via": "r52",
+    "evidence": "E2_name:carboxylase",
+    "gene": "1164153"
+   },
+   {
+    "via": "r56",
+    "evidence": "E2_name:carboxylase",
+    "gene": "1137712"
+   },
+   {
+    "via": "r58a",
+    "evidence": "E2_name:carboxylase",
+    "gene": "1088723"
+   },
+   {
+    "via": "r58a",
+    "evidence": "E2_name:carboxylase",
+    "gene": "1114868"
+   },
+   {
+    "via": "r58a",
+    "evidence": "E2_name:carboxylase",
+    "gene": "1131969"
+   },
+   {
+    "via": "r75a",
+    "evidence": "E2_name:carboxylase",
+    "gene": "1148545"
+   },
+   {
+    "via": "r75a",
+    "evidence": "E2_name:carboxylase",
+    "gene": "1157820"
+   }
+  ],
+  "biomass": [],
+  "goxC": [
+   {
+    "via": "r163a",
+    "evidence": "E2_name:glucose oxidase",
+    "gene": "1173944"
+   },
+   {
+    "via": "r163a",
+    "evidence": "E2_name:glucose oxidase",
+    "gene": "1132955"
+   },
+   {
+    "via": "r164a",
+    "evidence": "E2_name:glucose oxidase",
+    "gene": "1084421"
+   },
+   {
+    "via": "r164a",
+    "evidence": "E2_name:glucose oxidase",
+    "gene": "1132955"
+   }
+  ],
+  "goxA": [
+   {
+    "via": "r163a",
+    "evidence": "E2_name:glucose oxidase",
+    "gene": "1173944"
+   },
+   {
+    "via": "r163a",
+    "evidence": "E2_name:glucose oxidase",
+    "gene": "1132955"
+   },
+   {
+    "via": "r164a",
+    "evidence": "E2_name:glucose oxidase",
+    "gene": "1084421"
+   },
+   {
+    "via": "r164a",
+    "evidence": "E2_name:glucose oxidase",
+    "gene": "1132955"
+   }
+  ],
+  "goxB": [
+   {
+    "via": "r163a",
+    "evidence": "E2_name:glucose oxidase",
+    "gene": "1173944"
+   },
+   {
+    "via": "r163a",
+    "evidence": "E2_name:glucose oxidase",
+    "gene": "1132955"
+   },
+   {
+    "via": "r164a",
+    "evidence": "E2_name:glucose oxidase",
+    "gene": "1084421"
+   },
+   {
+    "via": "r164a",
+    "evidence": "E2_name:glucose oxidase",
+    "gene": "1132955"
+   }
+  ],
+  "goxD": [
+   {
+    "via": "r163a",
+    "evidence": "E2_name:glucose oxidase",
+    "gene": "1173944"
+   },
+   {
+    "via": "r163a",
+    "evidence": "E2_name:glucose oxidase",
+    "gene": "1132955"
+   },
+   {
+    "via": "r164a",
+    "evidence": "E2_name:glucose oxidase",
+    "gene": "1084421"
+   },
+   {
+    "via": "r164a",
+    "evidence": "E2_name:glucose oxidase",
+    "gene": "1132955"
+   }
+  ],
+  "cluster_A_nrps": [],
+  "cluster_B_pks": []
+ }
+}
