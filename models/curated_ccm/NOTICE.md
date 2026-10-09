@@ -1,1 +1,41 @@
-IyBOT1RJQ0Ug4oCUICpBLiBuaWdlciogQ0NNIChjdXJhdGVkKSBwaWxvdAoKIyMgTW9kZWwgcHJvdmVuYW5jZQpgZGF0YS9hbmlnZXJfY2NtX3JlZmluZWQueG1sYCBpcyBhICoqY3VyYXRlZCBjZW50cmFsLWNhcmJvbi1tZXRhYm9saXNtIChDQ00pCm1vZGVsIGJ1aWx0IGluLWhvdXNlKiogYXMgcGFydCBvZiB0aGUgVml0YU1pbmQgdmlydHVhbC1taWNyb2JlIHByb2plY3QKKFBoYXNlIDEgcmVmaW5lZCkuIEl0IGlzICoqbm90KiogYSBwdWJsaXNoZWQgZnVsbC1nZW5vbWUgR0VNICh1bmxpa2UgaUpCMTMyNQpmcm9tIEJpR0cgb3IgZWNZZWFzdEdFTSkuIFNvdXJjZSBidWlsZGVyOgpgdml0YW1pbmRfY29yZS9hc3NldHMvZ2VtL2FuaWdlcl9jY21fcmVmaW5lZF9idWlsZC5weWAuCgojIyBMaWNlbnNlClRoZSBtb2RlbCBhbmQgYWxsIGBzcmMvYCB0b29saW5nIGFyZSByZWxlYXNlZCB1bmRlciAqKk1JVCoqIChzZWUgYExJQ0VOU0VgKS4KTm8gdGhpcmQtcGFydHkgR0VNIGxpY2Vuc2UgYXBwbGllcy4KCiMjIEtub3duIGxpbWl0YXRpb25zIChkaXNjbG9zZWQsIG5vdCBoaWRkZW4pCjEuICoqQ3VyYXRlZCBjb3JlLCBub3Qgd2hvbGUtY2VsbC4qKiAyOCByeG4gLyAyNCBtZXQgLyAxNyBnZW5lIOKAlCBhIGZvY3VzZWQgQ0NNCiAgIGNvcmUuIE5vIGZ1bGwgZ2Vub21lIGNvdmVyYWdlLCBubyBmdWxsIG1ldGFib2xpdGUgcG9vbC4KMi4gKipMdW1wZWQgYXBwcm94aW1hdGlvbnMuKiogR2x5Y29seXNpcyAoYEVNUF9weXJgL2BFTVBfcGVwYCkgYW5kCiAgIGBHT1hgL2BBVFBfc2lua2AgYXJlIHNpbXBsaWZ5aW5nIGx1bXBzOyBtYXNzL2NoYXJnZSBhcmUgbm90IHN0cmljdGx5CiAgIGNvbnNlcnZlZCB0aGVyZS4gTUVNT1RFIHdvdWxkIGZsYWcgYG1hc3NfYmFsYW5jZWAgZmFpbHMgb24gdGhvc2UgcmVhY3Rpb25zLgogICBUaGlzIGlzIGEgZGVsaWJlcmF0ZSBQaGFzZS0xIHNpbXBsaWZpY2F0aW9uLCBub3QgYW4gZXJyb3IgaW4gYSBwdWJsaXNoZWQgR0VNLgozLiAqKkJpb21hc3MgaXMgaW4gbW9kZWwgdW5pdHMsIG5vdCBo4oG7wrkuKiogVGhlIHBGQkEgdmFsdWUgfjE4Ljk1IHJlZmxlY3RzCiAgIGx1bXBlZCBiaW9tYXNzIGNvZWZmaWNpZW50cywgTk9UIGEgY2FsaWJyYXRlZCBwZXItaG91ciBncm93dGggcmF0ZS4gRG8gTk9UCiAgIGNvbXBhcmUgdG8gaUpCMTMyNSAoMC45Mzk5IGjigbvCuSkgb3IgZWNZZWFzdEdFTSAoMC4wODc5NzQgaOKBu8K5KS4KNC4gKipXaGF0IElTIHNvbGlkOioqIGEgKnJlYWwqIGJpb21hc3MgcmVhY3Rpb24gKGBCSU9NQVNTYCwgU0JPOjAwMDA2MjkpIHdpdGgKICAgcmVhbCBwcmVjdXJzb3JzICsgR0FNOyBhICp2ZXJpZmlhYmxlKiBjYXJib24gZ3VhcmRyYWlsIChjbG9zaW5nIDUKICAgb3JnYW5pYy1jYXJib24gZXhjaGFuZ2VzIGNvbGxhcHNlcyBncm93dGggdG8gMCwgZHJvcCB+MTAwJSk7IGdlbnVpbmUgR1BSCiAgIHJ1bGVzICgxNyBnZW5lcyk7IGFuZCB0aGUgbmF0aXZlICpBLiBuaWdlciogcGhvc3BoYXRlLXN3aXRjaCBwaGVub3R5cGUsCiAgIGFzc2VydGVkIGJ5IGhhcmQgY2hlY2sgTDcg4oCUIGNsb3NpbmcgYEVYX3Bob3NgIGNvbGxhcHNlcyBncm93dGggMTguOTUgLT4gMAogICB3aGlsZSBjaXRyYXRlIHNlY3JldGlvbiBjYXBhY2l0eSBkb3VibGVzIDYuMDAgLT4gMTIuMDAuCjUuICoqQ2l0cmF0ZSBvdmVyZmxvdyBpcyBpbnZpc2libGUgdW5kZXIgYSBiaW9tYXNzIG9iamVjdGl2ZS4qKiBTb2x2ZWQgd2l0aAogICBiaW9tYXNzIGFzIHRoZSBzb2xlIG9iamVjdGl2ZSwgYEVYX2NpdGAgaXMgZXhhY3RseSAwLjAwMDAgaW4gYm90aCBwaG9zcGhhdGUKICAgcGhhc2VzIChjYXJib24tbWluaW1hbCBrbmlmZS1lZGdlIHNvbHV0aW9uKS4gVGhlIHBoZW5vdHlwZSBvbmx5IGFwcGVhcnMgd2hlbgogICBjaXRyYXRlIHNlY3JldGlvbiBpcyB0aGUgb2JqZWN0aXZlIHN1YmplY3QgdG8gYSBncm93dGggZmxvb3IuIEFueSBkb3duc3RyZWFtCiAgIHJldXNlIG9mIGBwaG9zcGhhdGVfc3dpdGNoKClgIG11c3Qga2VlcCB0aGF0IHN0cnVjdHVyZS4KCiMjIFdoeSB0aGlzIHJlcGxhY2VzIGlNQTg3MQpgaU1BODcxYCAoQmlvTW9kZWxzKSBzaGlwcyBgZ2VuZT0wYCwgYW4gYXJ0aWZpY2lhbCBiaW9tYXNzIHNpbmssIGFuZCBhIGNhcmJvbgpndWFyZHJhaWwgdGhhdCBpcyAqKk5PVCoqIHZlcmlmaWFibGUg4oCUIGl0IGNhbm5vdCBzZXJ2ZSBhcyBhIHRydXN0d29ydGh5CnJlZmVyZW5jZS4gVGhpcyBjdXJhdGVkIENDTSBtb2RlbCBpcyB0aGUgaG9uZXN0LCB3b3JraW5nICpBLiBuaWdlciogcGlsb3QgZm9yCnRoZSBzZXJpZXMuIFRoZSBgaU1BODcxLWFuaWdlci1waWxvdGAgcmVwb3NpdG9yeSB3YXMgY3JlYXRlZCBlbXB0eSBieSBtaXN0YWtlCmFuZCBpcyBzdXBlcnNlZGVkIGJ5IHRoaXMgb25lLgo=
+# NOTICE — *A. niger* CCM (curated) pilot
+
+## Model provenance
+`data/aniger_ccm_refined.xml` is a **curated central-carbon-metabolism (CCM)
+model built in-house** as part of the VitaMind virtual-microbe project
+(Phase 1 refined). It is **not** a published full-genome GEM (unlike iJB1325
+from BiGG or ecYeastGEM). Source builder:
+`vitamind_core/assets/gem/aniger_ccm_refined_build.py`.
+
+## License
+The model and all `src/` tooling are released under **MIT** (see `LICENSE`).
+No third-party GEM license applies.
+
+## Known limitations (disclosed, not hidden)
+1. **Curated core, not whole-cell.** 28 rxn / 24 met / 17 gene — a focused CCM
+   core. No full genome coverage, no full metabolite pool.
+2. **Lumped approximations.** Glycolysis (`EMP_pyr`/`EMP_pep`) and
+   `GOX`/`ATP_sink` are simplifying lumps; mass/charge are not strictly
+   conserved there. MEMOTE would flag `mass_balance` fails on those reactions.
+   This is a deliberate Phase-1 simplification, not an error in a published GEM.
+3. **Biomass is in model units, not h⁻¹.** The pFBA value ~18.95 reflects
+   lumped biomass coefficients, NOT a calibrated per-hour growth rate. Do NOT
+   compare to iJB1325 (0.9399 h⁻¹) or ecYeastGEM (0.087974 h⁻¹).
+4. **What IS solid:** a *real* biomass reaction (`BIOMASS`, SBO:0000629) with
+   real precursors + GAM; a *verifiable* carbon guardrail (closing 5
+   organic-carbon exchanges collapses growth to 0, drop ~100%); genuine GPR
+   rules (17 genes); and the native *A. niger* phosphate-switch phenotype,
+   asserted by hard check L7 — closing `EX_phos` collapses growth 18.95 -> 0
+   while citrate secretion capacity doubles 6.00 -> 12.00.
+5. **Citrate overflow is invisible under a biomass objective.** Solved with
+   biomass as the sole objective, `EX_cit` is exactly 0.0000 in both phosphate
+   phases (carbon-minimal knife-edge solution). The phenotype only appears when
+   citrate secretion is the objective subject to a growth floor. Any downstream
+   reuse of `phosphate_switch()` must keep that structure.
+
+## Why this replaces iMA871
+`iMA871` (BioModels) ships `gene=0`, an artificial biomass sink, and a carbon
+guardrail that is **NOT** verifiable — it cannot serve as a trustworthy
+reference. This curated CCM model is the honest, working *A. niger* pilot for
+the series. The `iMA871-aniger-pilot` repository was created empty by mistake
+and is superseded by this one.
